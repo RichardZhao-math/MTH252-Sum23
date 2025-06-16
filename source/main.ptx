@@ -6,13 +6,13 @@
 
   <book xml:id="my-great-book">
     <title>MTH 252 Calculus II</title>
-    <subtitle>An example to get you started</subtitle>
+    <subtitle>Summer 2023</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-chapter-title.ptx" />
+    <xi:include href="./ch-activities.ptx" />
 
 
     <!-- Include backmatter -->
