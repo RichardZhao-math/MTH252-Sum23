@@ -12,8 +12,19 @@
     <xi:include href="./frontmatter.ptx" />
 
     <!-- Include chapters -->
-    <xi:include href="./ch-activities.ptx" />
+    <xi:include href="./ch-wk3-activities.ptx" />
+    
+    <!-- Include chapters -->
+    <xi:include href="./ch-wk5-activities.ptx" />
 
+    <!-- Include chapters -->
+    <xi:include href="./ch-wk6-activities.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-wk8-activities.ptx" />
+
+    <!-- Include chapters -->
+    <xi:include href="./ch-wk9-activities.ptx" />
 
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
