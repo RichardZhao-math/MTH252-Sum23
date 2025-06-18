@@ -6,7 +6,7 @@
 
   <book xml:id="my-great-book">
     <title>MTH 252 Calculus II</title>
-    <subtitle>Summer 2023</subtitle>
+    <subtitle>Summer 2025</subtitle>
 
     <!-- Include frontmatter -->
     <xi:include href="./frontmatter.ptx" />
