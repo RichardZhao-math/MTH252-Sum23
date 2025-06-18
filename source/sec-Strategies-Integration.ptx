@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-Strategies-Integration" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Strategies to Evaluate Integrals</title>
-
-  <p>
-    We have learned a lot of techniques for evaluating integrals in this term. 
-  </p>
-
-  <p>
-    In this activity, you will explore two specific integrals and reflect on the process. 
-  </p>
-
-  <subsection>
-    <title>What's the "best" way to evaluate integrals?</title>
-    <p>
-      Back in the 1990s, an instructor placed the following integral at the beginning of a final exam in an integral calculus course:
-    </p>
-    <me>
-      \int \frac{x}{x^2 - 9}\, dx
-    </me>
-    <p>
-      Imagine you were a student taking this exam, how would you try evaluating this integral?
-    </p>
-    <task>
-      <title>First approach to evaluate this integral</title>
+  <title>What's the "best" way to evaluate integrals?</title>
+    <introduction>
+      <p>
+        Back in the 1990s, an instructor placed the following integral question at the beginning of a final exam in an integral calculus course:
+        <me>
+          \int \frac{x}{x^2 - 9}\, dx
+        </me>
+        <p>
+          Imagine you were a student taking this exam, how would you try evaluating this integral?
+        </p>
+      </p>
+    </introduction>
+    
+    <exercises>
+      <title>Part (a): First approach</title>
         <statement>
           <p>
             What is the <em>first method</em> you would try to evaluate this integral? 
@@ -31,9 +23,10 @@
             Then carry out the integration using this method and show all steps clearly. 
           </p>
         </statement>
-    </task>
-    <task>
-      <title>Alternative approach to evaluate this integral</title>
+    </exercises>
+
+    <exercises>
+      <title>Part (b): Alternative approach</title>
       <statement>
         <p>
           Now, come up with a <em>different method</em> that could also be used to evaluate the same integral. 
@@ -41,93 +34,94 @@
           Then, evaluate the integral using this second method, again showing all steps clearly.
         </p>
       </statement>
-    </task>
-    <paragraphs>
-      <p>
-        When you finished the above question, expand the solution below and check your answer. 
-      </p>
-      <solution>
+    </exercises>
+    
+    <exercises>
+      <title>Part (c): Compare and reflect</title>
         <p>
-          There are (at least) three methods to solve this integral. They are <m>u</m>-sub, trig sub, and partial fraction decomposition. 
+          When you completed the above tasks, expand the solution below and check your answer. 
         </p>
-        <ol>
-          <li>
-            <p>
-              <alert>Using <m>\boldsymbol{u}</m>-sub: </alert> 
-              Let <m>u = x^2 - 9</m>. Then <m>du = 2x\, dx</m>. 
-            </p>
-            <md>
-              <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = \int \frac{1}{2u}\, du </mrow>
-              <mrow> \amp = \frac{1}{2}\ln|u| + C </mrow>
-              <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
-            </md>
-          </li>
-          <li>
-            <p>
-              <alert>Using Trig sub: </alert> 
-              Let <m>x = 3\sin(\theta)</m>. Then <m>dx = 3\cos(\theta)\, d\theta</m>. 
-            </p>
-            <md>
-              <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = -\int \frac{x}{9 - x^2}\, dx </mrow>
-              <mrow> \amp = -\int \frac{3\sin(\theta)}{9 - 9\sin^2(\theta)}\cdot 3\cos(\theta)\, d\theta </mrow>
-              <mrow> \amp = -\int \frac{9\sin(\theta)\cos(\theta)}{9\cos^2(\theta)}\, d\theta </mrow>
-              <mrow> \amp = -\int \tan(\theta)\, d\theta </mrow>
-              <mrow> \amp = -\ln|\sec(\theta)| + C_0 </mrow>
-              <mrow> \amp = -\ln\left|\frac{3}{\sqrt{9 - x^2}}\right| + C_0 </mrow>
-              <mrow> \amp = -\left(\ln(3) - \ln\left|9 - x^2\right|^{\frac{1}{2}}\right) + C_0</mrow>
-              <mrow> \amp = \frac{1}{2}\ln\left|9 - x^2\right| - \ln(3) + C_0</mrow>
-              <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
-            </md>
-            <p>
-              where <m>C = -\ln(3) + C_0</m>. 
-            </p>
-          </li>
-          <li>
-            <p>
-              <alert>Using Partial Fraction: </alert> 
-              Let <m>A</m> and <m>B</m> be two numbers. Note that
-            </p>
-            <me>
-              \frac{x}{x^2 - 9} = \frac{x}{(x + 3)(x - 3)} = \frac{A}{x + 3} + \frac{B}{x - 3}
-            </me>
-            <p>
-              This implies that
-            </p>
-            <me>
-              x = A(x - 3) + B(x + 3)
-            </me>
-            <p>
-              We can determine that <m>A = \dfrac{1}{2}</m> and <m>B = \dfrac{1}{2}</m>. 
-            </p>
-            <md>
-              <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = \int \left(\frac{1/2}{x + 3} + \frac{1/2}{x - 3}\right)\, dx </mrow>
-              <mrow> \amp = \frac{1}{2} \int \left(\frac{1}{x + 3} + \frac{1}{x - 3}\right) \, dx </mrow> 
-              <mrow> \amp = \frac{1}{2} \left(\ln|x + 3| + \ln|x - 3|\right) + C </mrow>
-              <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
-            </md>
-          </li>
-        </ol>
-      </solution>
-    </paragraphs>
-    <task>
-      <title>Compare and reflect</title>
-      <statement>
-        <p>
-          Did your answer(s) match with the solution? 
-        </p>
-      </statement>
-    </task>
-  </subsection>
-
-  <subsection>
-    <title>Does calculators evaluate integrals "smartly"?</title>
-      <p>
-        There are some computer algebra system, including 
-        <url href="https://www.wolframalpha.com/calculators/integral-calculator">WolframAlpha</url>, 
-        <url href="https://www.symbolab.com/solver/integral-calculator">Symbolab</url>,
-        <url href="https://www.integral-calculator.com/">Integral Calculator</url>, 
-        and so many others. 
-      </p>
-  </subsection>
+        <solution>
+          <p>
+            We can evaluate this integral using three methods we have learned in this class: they are <m>u</m>-sub, trig sub, and partial fraction decomposition. 
+          </p>
+          <ol>
+            <li>
+              <p>
+                <alert>Using <m>\boldsymbol{u}</m>-sub: </alert> 
+                Let <m>u = x^2 - 9</m>. Then <m>du = 2x\, dx</m>. 
+              </p>
+              <md>
+                <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = \int \frac{1}{2u}\, du </mrow>
+                <mrow> \amp = \frac{1}{2}\ln|u| + C </mrow>
+                <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
+              </md>
+            </li>
+            <li>
+              <p>
+                <alert>Using Trig sub: </alert> 
+                Let <m>x = 3\sin(\theta)</m>. Then <m>dx = 3\cos(\theta)\, d\theta</m>. 
+              </p>
+              <md>
+                <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = -\int \frac{x}{9 - x^2}\, dx </mrow>
+                <mrow> \amp = -\int \frac{3\sin(\theta)}{9 - 9\sin^2(\theta)}\cdot 3\cos(\theta)\, d\theta </mrow>
+                <mrow> \amp = -\int \frac{9\sin(\theta)\cos(\theta)}{9\cos^2(\theta)}\, d\theta </mrow>
+                <mrow> \amp = -\int \tan(\theta)\, d\theta </mrow>
+                <mrow> \amp = -\ln|\sec(\theta)| + C_0 </mrow>
+                <mrow> \amp = -\ln\left|\frac{3}{\sqrt{9 - x^2}}\right| + C_0 </mrow>
+                <mrow> \amp = -\left(\ln(3) - \ln\left|9 - x^2\right|^{\frac{1}{2}}\right) + C_0</mrow>
+                <mrow> \amp = \frac{1}{2}\ln\left|9 - x^2\right| - \ln(3) + C_0</mrow>
+                <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
+              </md>
+              <p>
+                where <m>C = -\ln(3) + C_0</m>. 
+              </p>
+            </li>
+            <li>
+              <p>
+                <alert>Using Partial Fraction: </alert> 
+                Let <m>A</m> and <m>B</m> be two numbers. Note that
+              </p>
+              <me>
+                \frac{x}{x^2 - 9} = \frac{x}{(x + 3)(x - 3)} = \frac{A}{x + 3} + \frac{B}{x - 3}
+              </me>
+              <p>
+                This implies that
+              </p>
+              <me>
+                x = A(x - 3) + B(x + 3)
+              </me>
+              <p>
+                We can determine that <m>A = \dfrac{1}{2}</m> and <m>B = \dfrac{1}{2}</m>. 
+              </p>
+              <md>
+                <mrow>\int \frac{x}{x^2 - 9}\, dx \amp = \int \left(\frac{1/2}{x + 3} + \frac{1/2}{x - 3}\right)\, dx </mrow>
+                <mrow> \amp = \frac{1}{2} \int \left(\frac{1}{x + 3} + \frac{1}{x - 3}\right) \, dx </mrow> 
+                <mrow> \amp = \frac{1}{2} \left(\ln|x + 3| + \ln|x - 3|\right) + C </mrow>
+                <mrow> \amp = \frac{1}{2}\ln\left|x^2 - 9\right| + C </mrow>
+              </md>
+            </li>
+          </ol>
+        </solution>
+        
+        <statement>
+          <p>
+            Grade your work using the solution provided above. Then write a short reflection that addresses the following prompts: 
+            <ul>
+                <li>
+                    <p>
+                        The instructor put this integral question in the beginning of the final exam, hoping to bolster students' confidence. Do you think their goal is accomplished using your first approach? 
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        
+                    </p>
+                </li>
+            </ul>
+          </p>
+        </statement>
+      
+    </exercises>
 
 </section>

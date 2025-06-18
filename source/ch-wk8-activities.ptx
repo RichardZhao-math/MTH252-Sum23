@@ -5,7 +5,7 @@
 
   <introduction>
     <p> 
-      The activities for this week will ask you to explore various techniques. 
+      The activities for this week will ask you to explore various techniques to evaluate integrals. 
     </p>
 
     <p>
@@ -15,5 +15,8 @@
 
   <!-- include sections -->
   <xi:include href="sec-Strategies-Integration.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Calculator-Integration.ptx" />
 
 </chapter>
