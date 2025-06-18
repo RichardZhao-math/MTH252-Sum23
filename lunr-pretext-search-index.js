@@ -10,13 +10,49 @@ var ptx_lunr_docs = [
   "body": "  "
 },
 {
+  "id": "sec-Proof-FTC",
+  "level": "1",
+  "url": "sec-Proof-FTC.html",
+  "type": "Section",
+  "number": "1.1",
+  "title": "Justifying the Fundamental Theorem of Calculus",
+  "body": " Justifying the Fundamental Theorem of Calculus  Just some introduction blahblahblah  "
+},
+{
+  "id": "ch-wk5-activities",
+  "level": "1",
+  "url": "ch-wk5-activities.html",
+  "type": "Chapter",
+  "number": "2",
+  "title": "Week 5 Activities",
+  "body": " Week 5 Activities   The activities for this week will ask you to think about integrals in a different way.  When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas.    "
+},
+{
+  "id": "ch-wk6-activities",
+  "level": "1",
+  "url": "ch-wk6-activities.html",
+  "type": "Chapter",
+  "number": "3",
+  "title": "Week 6 Activities",
+  "body": " Week 6 Activities   The activities for this week will ask you to explore some strategies to evaluate trigonometric integrals.  When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas.    "
+},
+{
   "id": "sec-Strategies-Integration",
   "level": "1",
   "url": "sec-Strategies-Integration.html",
   "type": "Section",
-  "number": "1.1",
+  "number": "4.1",
   "title": "Strategies to Evaluate Integrals",
   "body": " Strategies to Evaluate Integrals  We have learned a lot of techniques for evaluating integrals in this term.  In this activity, you will explore two specific integrals and reflect on the process.   What's the \"best\" way to evaluate integrals?  Back in the 1990s, an instructor placed the following integral at the beginning of a final exam in an integral calculus course:   Imagine you were a student taking this exam, how would you try evaluating this integral?   First approach to evaluate this integral   What is the first method you would try to evaluate this integral? Clearly state your reasoning for choosing this method as your first approach. Then carry out the integration using this method and show all steps clearly.     Alternative approach to evaluate this integral   Now, come up with a different method that could also be used to evaluate the same integral. Briefly explain why you believe this alternative method is valid and likely to succeed. Then, evaluate the integral using this second method, again showing all steps clearly.     When you finished the above question, expand the solution below and check your answer.   There are (at least) three methods to solve this integral. They are -sub, trig sub, and partial fraction decomposition.     Using -sub: Let . Then .      Using Trig sub: Let . Then .   where .     Using Partial Fraction: Let and be two numbers. Note that   This implies that   We can determine that and .        Compare and reflect   Did your answer(s) match with the solution?      Does calculators evaluate integrals \"smartly\"?  There are some computer algebra system, including WolframAlpha , Symbolab , Integral Calculator , and so many others.   "
+},
+{
+  "id": "ch-wk9-activities",
+  "level": "1",
+  "url": "ch-wk9-activities.html",
+  "type": "Chapter",
+  "number": "5",
+  "title": "Week 9 Activities",
+  "body": " Week 9 Activities   The activities for this week will ask you to explore a topic in probability - continuous probability distribution.  When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas.    "
 },
 {
   "id": "backmatter-2",
