@@ -46,6 +46,7 @@
           <p>
             Go to <url href="https://www.integral-calculator.com/">Integral Calculator</url> and input "(sinx+cosx)^2". Then click Go! 
           </p>
+          
           <p>
             After the CAS evaluated the integral, scroll down on the Result and click "Show steps" to see how the CAS evaluated the integral. 
           </p>
