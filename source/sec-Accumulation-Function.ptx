@@ -2,9 +2,74 @@
 
 <section xml:id="sec-Accumulation-Function" xmlns:xi="http://www.w3.org/2001/XInclude">
   <title>The Accumulation Function</title>
+  <introduction>
+    <p>
+      Let us first define what the accumulation function is! 
+    </p>
 
-  <p>
-    Just some introduction blahblahblah 
-  </p>
+    <definition xml:id="def-AccumulationFunction">
+      <statement>
+        <p>
+          Let <m>f</m> be a continuous function on an open interval <m>I</m> and let <m>a</m> be in <m>I</m>. We define the <alert>accumulation function</alert> as 
+          <men xml:id="eqn-def-AccumulationFunction">
+            A(x) = \int_a^x f(t)\, dt
+          </men>
+        </p>
+      </statement>
+    </definition>
+
+  </introduction>
+
+  <exercises>
+  <title>Part (a): An example</title>
+    <statement>
+      <p>
+        Let <m>f(t) = 2t - 1</m> and <m>a = 1</m>. Then we can define the accumulation function here to be 
+        <me>
+          A(x) = \int_1^x \left(2t - 1\right)\, dt
+        </me>
+        Compute <m>A(1)</m>, <m>A(2)</m>, <m>A(3)</m>, and <m>A(4)</m>. Then graph <m>y = f(t)</m> and indicate what these values represent on the graph. 
+      </p>
+    </statement>
+  </exercises>
+
+<exercises>
+  <title>Part (b): Meaning of the function</title>
+    <statement>
+      <p>
+        Functions have inputs and outputs. 
+        What does the input of the accumulation function, <m>x</m>, represent? 
+        What does the output of the accumulation function, <m>A(x)</m>, represent? 
+        Be as specific as possible in your answer. 
+      </p>
+      <p>
+        After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the <alert>accumulation function</alert>? 
+      </p>
+    </statement>
+  </exercises>
+
+  <exercises>
+  <title>Part (c): Structure of the formula</title>
+    <statement>
+      <p>
+        Notice that there are two variables in the accumulation function, which are <m>x</m> and <m>t</m>. 
+        Explain why we need both <m>x</m> and <m>t</m> to define the accumulation function? 
+      </p>
+      <p>  
+        For example, why wouldn't it make sense to define the accumulation function using ONLY <m>x</m> as the variable? 
+      </p>
+    </statement>
+    <hint>
+      <p>
+        Let's say we define the accumulation using only <m>x</m> as the variable like this: 
+        <me>
+          A(x) = \int_a^x f(x)\, dx
+        </me>
+        Then how would we compute, let's say <m>A(2)</m>? 
+        We will need to replace ALL the <m>x</m>'s with <m>2</m>... 
+        Does the expression make sense?
+      </p>
+    </hint>
+  </exercises>
 
 </section>
