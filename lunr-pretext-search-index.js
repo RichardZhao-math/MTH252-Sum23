@@ -16,7 +16,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "The Accumulation Function",
-  "body": " The Accumulation Function  Just some introduction blahblahblah  "
+  "body": " The Accumulation Function   Let us first define what the accumulation function is!    Let be a continuous function on an open interval and let be in . We define the accumulation function as       Part (a): An example   Let and . Then we can define the accumulation function here to be Compute , , , and . Then graph and indicate what these values represent on the graph.     Part (b): Meaning of the function   Functions have inputs and outputs. What does the input of the accumulation function, , represent? What does the output of the accumulation function, , represent? Be as specific as possible in your answer.  After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the accumulation function ?     Part (c): Structure of the formula   Notice that there are two variables in the accumulation function, which are and . Explain why we need both and to define the accumulation function?  For example, why wouldn't it make sense to define the accumulation function using ONLY as the variable?    Let's say we define the accumulation using only as the variable like this: Then how would we compute, let's say ? We will need to replace ALL the 's with ... Does the expression make sense?    "
+},
+{
+  "id": "def-AccumulationFunction",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#def-AccumulationFunction",
+  "type": "Definition",
+  "number": "1.1.1",
+  "title": "",
+  "body": "  Let be a continuous function on an open interval and let be in . We define the accumulation function as    "
 },
 {
   "id": "sec-Proof-FTC",

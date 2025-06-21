@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.1';
+eBookConfig.runestone_version = '7.8.2';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.242116c5bc6b6581.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.c7bf407f76a97812.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.8e4157bd77a28b29.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -143,7 +143,14 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li class="toc-item toc-chapter contains-active">
 <div class="toc-title-box"><a href="ch-wk2-activities.html" class="internal"><span class="codenumber">1</span> <span class="title">Week 2 Activities</span></a></div>
-<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-Accumulation-Function.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Accumulation Function</span></a></div></li></ul>
+<ul class="structural toc-item-list contains-active"><li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-Accumulation-Function.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Accumulation Function</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-3" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (a): An example</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-4" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (b): Meaning of the function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-5" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (c): Structure of the formula</span></a></div></li>
+</ul>
+</li></ul>
 </li>
 <li class="toc-item toc-chapter">
 <div class="toc-title-box"><a href="ch-wk3-activities.html" class="internal"><span class="codenumber">2</span> <span class="title">Week 3 Activities</span></a></div>
@@ -178,9 +185,58 @@ eBookConfig.enable_chatcodes =  false;
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Accumulation-Function"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">The Accumulation Function</span>
 </h2>
-<div class="para" id="sec-Accumulation-Function-2">Just some introduction blahblahblah<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-2" title="Copy permalink for Paragraph">🔗</a></div>
+<section class="introduction" id="sec-Accumulation-Function-2"><div class="para" id="sec-Accumulation-Function-2-1">Let us first define what the accumulation function is!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-2-1" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Section 1.1: The Accumulation Function"><a href="#sec-Accumulation-Function" title="Copy permalink for Section 1.1: The Accumulation Function">🔗</a></div></section></div>
+<article class="definition definition-like" id="def-AccumulationFunction"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="def-AccumulationFunction-1-1">
+<div class="para">Let <span class="process-math">\(f\)</span> be a continuous function on an open interval <span class="process-math">\(I\)</span> and let <span class="process-math">\(a\)</span> be in <span class="process-math">\(I\text{.}\)</span> We define the <em class="alert">accumulation function</em> as</div>
+<div class="displaymath process-math" id="eqn-def-AccumulationFunction">
+\begin{equation}
+A(x) = \int_a^x f(t)\, dt\tag{1.1.1}
+\end{equation}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#def-AccumulationFunction-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Definition 1.1.1"><a href="#def-AccumulationFunction" title="Copy permalink for Definition 1.1.1">🔗</a></div></article></section><section class="exercises" id="sec-Accumulation-Function-3"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (a): An example</span>
+</h3>
+<div class="para logical" id="sec-Accumulation-Function-3-2-1">
+<div class="para">Let <span class="process-math">\(f(t) = 2t - 1\)</span> and <span class="process-math">\(a = 1\text{.}\)</span> Then we can define the accumulation function here to be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(x) = \int_1^x \left(2t - 1\right)\, dt
+\end{equation*}
+</div>
+<div class="para">Compute <span class="process-math">\(A(1)\text{,}\)</span> <span class="process-math">\(A(2)\text{,}\)</span> <span class="process-math">\(A(3)\text{,}\)</span> and <span class="process-math">\(A(4)\text{.}\)</span> Then graph <span class="process-math">\(y = f(t)\)</span> and indicate what these values represent on the graph.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 1.1: Part (a): An example"><a href="#sec-Accumulation-Function-3" title="Copy permalink for Exercises 1.1: Part (a): An example">🔗</a></div></section><section class="exercises" id="sec-Accumulation-Function-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (b): Meaning of the function</span>
+</h3>
+<div class="para" id="sec-Accumulation-Function-4-2-1">Functions have inputs and outputs. What does the input of the accumulation function, <span class="process-math">\(x\text{,}\)</span> represent? What does the output of the accumulation function, <span class="process-math">\(A(x)\text{,}\)</span> represent? Be as specific as possible in your answer.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-Accumulation-Function-4-2-2">After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the <em class="alert">accumulation function</em>?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-4-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 1.1: Part (b): Meaning of the function"><a href="#sec-Accumulation-Function-4" title="Copy permalink for Exercises 1.1: Part (b): Meaning of the function">🔗</a></div></section><section class="exercises" id="sec-Accumulation-Function-5"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (c): Structure of the formula</span>
+</h3>
+<div class="para" id="sec-Accumulation-Function-5-2-1">Notice that there are two variables in the accumulation function, which are <span class="process-math">\(x\)</span> and <span class="process-math">\(t\text{.}\)</span> Explain why we need both <span class="process-math">\(x\)</span> and <span class="process-math">\(t\)</span> to define the accumulation function?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-5-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="sec-Accumulation-Function-5-2-2">For example, why wouldn’t it make sense to define the accumulation function using ONLY <span class="process-math">\(x\)</span> as the variable?<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-5-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<details id="sec-Accumulation-Function-5-3" class="hint solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Hint</span><span class="period">.</span></summary><div class="hint solution-like knowl__content">
+<div class="para logical" id="sec-Accumulation-Function-5-3-1">
+<div class="para">Let’s say we define the accumulation using only <span class="process-math">\(x\)</span> as the variable like this:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A(x) = \int_a^x f(x)\, dx
+\end{equation*}
+</div>
+<div class="para">Then how would we compute, let’s say <span class="process-math">\(A(2)\text{?}\)</span> We will need to replace ALL the <span class="process-math">\(x\)</span>’s with <span class="process-math">\(2\text{...}\)</span> Does the expression make sense?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Accumulation-Function-5-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Hint 1.1.1"><a href="#sec-Accumulation-Function-5-3" title="Copy permalink for Hint 1.1.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Exercises 1.1: Part (c): Structure of the formula"><a href="#sec-Accumulation-Function-5" title="Copy permalink for Exercises 1.1: Part (c): Structure of the formula">🔗</a></div></section><div class="autopermalink" data-description="Section 1.1: The Accumulation Function"><a href="#sec-Accumulation-Function" title="Copy permalink for Section 1.1: The Accumulation Function">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-wk2-activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-wk3-activities.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
