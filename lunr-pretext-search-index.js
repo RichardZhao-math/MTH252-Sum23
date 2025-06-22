@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "The Accumulation Function",
-  "body": " The Accumulation Function   Let us first define what the accumulation function is!    Let be a continuous function on an open interval and let be in . We define the accumulation function as       Part (a): An example   Let and . Then we can define the accumulation function here to be Compute , , , and . Then graph and indicate what these values represent on the graph.     Part (b): Meaning of the function   Functions have inputs and outputs. What does the input of the accumulation function, , represent? What does the output of the accumulation function, , represent? Be as specific as possible in your answer.  After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the accumulation function ?     Part (c): Structure of the formula   Notice that there are two variables in the accumulation function, which are and . Explain why we need both and to define the accumulation function?  For example, why wouldn't it make sense to define the accumulation function using ONLY as the variable?    Let's say we define the accumulation using only as the variable like this: Then how would we compute, let's say ? We will need to replace ALL the 's with ... Does the expression make sense?    "
+  "body": " The Accumulation Function   Let us first define what the accumulation function is!    Let be a continuous function on an open interval and let be in . We define the accumulation function as   Using our knowledge of function notations, we know that the name of the accumulation function is , with the input of and the output of .      Part (a): An example   Let and . Then we can define the accumulation function here to be Compute , , , and . Then graph and indicate what these values represent on the graph.    Below is the graph of .   The Graph of         Part (b): Meaning of the function   Functions have inputs and outputs. What does the input of the accumulation function, , represent? What does the output of the accumulation function, , represent? Be as specific as possible in your answer.  After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the accumulation function ?    Notice that the variable appears to be in the place of the upper limit of integration in the integral. This implies that the input of the accumulation function, , represents the upper limit of integration . It tells us how \"far\" we are integrating from the starting point of .  The output of the accumulation function, , represents the signed area under the curve of from to .  We call the accumulation function because it accumulates the signed area under the curve as we move from the starting point of to some later point .     Part (c): Structure of the formula   Notice that there are two variables in the accumulation function, which are and . Explain why we need both and to define the accumulation function?  For example, why wouldn't it make sense to define the accumulation function using ONLY as the variable?    Let's say we define the accumulation using only as the variable like this: Then how would we compute, let's say ? We will need to replace ALL the 's with ... Does the expression make sense?    "
 },
 {
   "id": "def-AccumulationFunction",
@@ -25,7 +25,16 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.1",
   "title": "",
-  "body": "  Let be a continuous function on an open interval and let be in . We define the accumulation function as    "
+  "body": "  Let be a continuous function on an open interval and let be in . We define the accumulation function as   Using our knowledge of function notations, we know that the name of the accumulation function is , with the input of and the output of .   "
+},
+{
+  "id": "fig-tikz",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#fig-tikz",
+  "type": "Figure",
+  "number": "1.1.2",
+  "title": "",
+  "body": " The Graph of     "
 },
 {
   "id": "sec-Proof-FTC",
