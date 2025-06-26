@@ -4,6 +4,12 @@
   <title>Week 8 Activities</title>
 
   <introduction>
+    
+    <p>
+      The activities will be available on <alert> Monday, August 11</alert> and due on <alert>Sunday, August 17</alert>. 
+    </p>
+    
+    <!--
     <p> 
       The activities for this week will ask you to explore various techniques to evaluate integrals. 
     </p>
@@ -11,12 +17,14 @@
     <p>
       When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas. 
     </p>
+    -->
+
   </introduction>
 
-  <!-- include sections -->
-  <xi:include href="sec-Strategies-Integration.ptx" />
+  <!-- include sections 
+  <xi:include href="sec-Strategies-Integration.ptx" />-->
 
-  <!-- include sections -->
-  <xi:include href="sec-Calculator-Integration.ptx" />
+  <!-- include sections
+  <xi:include href="sec-Calculator-Integration.ptx" />-->
 
 </chapter>

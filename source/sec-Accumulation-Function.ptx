@@ -4,7 +4,7 @@
   <title>The Accumulation Function</title>
   <introduction>
     <p>
-      Let us first define what the accumulation function is! 
+      Let us first define what the accumulation function is! The definition is taken from your your textbook page 326 (but your textbook call it the area function). 
     </p>
 
     <definition xml:id="def-AccumulationFunction">
@@ -15,11 +15,11 @@
             A(x) = \int_a^x f(t)\, dt
           </men>
         </p>
-        <p>
-          Using our knowledge of function notations, we know that the name of the accumulation function is <m>A</m>, with the input of <m>x</m> and the output of <m>A(x)</m>. 
-        </p>
       </statement>
     </definition>
+    <p>
+      Using our knowledge of function notations, we know that the name of the accumulation function is <m>A</m>, with the input of <m>x</m> and the output of <m>A(x)</m>. 
+    </p> 
 
   </introduction>
 
@@ -34,6 +34,14 @@
         Compute <m>A(1)</m>, <m>A(2)</m>, <m>A(3)</m>, and <m>A(4)</m>. Then graph <m>y = f(t)</m> and indicate what these values represent on the graph. 
       </p>
     </statement>
+
+    <hint>
+      <p>
+        Julie went through a similar example in one of the lecture videos in this week. If you get stuck or you want to confirm that you are on the right track, find that example. 
+      </p>
+    </hint>
+    
+    <!-- 
     <solution>
       <p>
         Below is the graph of <m>f(t) = 2t - 1</m>. 
@@ -68,27 +76,31 @@
         
         </figure>
 
-      </solution>
+      </solution> 
+      -->
+
   </exercises>
 
-<exercises>
-  <title>Part (b): Meaning of the function</title>
+  <exercises>
+    <title>Part (b): Meaning of the function</title>
     <statement>
       <p>
         Functions have inputs and outputs. 
-        What does the input of the accumulation function, <m>x</m>, represent? 
-        What does the output of the accumulation function, <m>A(x)</m>, represent? 
+        What does the input of the accumulation function, <m>x</m>, represent and 
+        what does the output of the accumulation function, <m>A(x)</m>, represent? 
         Be as specific as possible in your answer. 
       </p>
       <p>
         After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the <alert>accumulation function</alert>? 
       </p>
     </statement>
+
+    <!--
     <solution>
       <p>
         Notice that the variable <m>x</m> appears to be in the place of the upper limit of integration in the integral. 
         This implies that the input of the accumulation function, <m>x</m>, represents the <alert>upper limit of integration</alert>. 
-        It tells us how "far" we are integrating from the starting point of <m>a</m>. 
+        It tells us how "far" we are integrating from the starting point of <m>t = a</m>. 
       </p>
       <p>
         The output of the accumulation function, <m>A(x)</m>, represents the <alert>signed area</alert> under the curve of <m>y = f(t)</m> from <m>t = a</m> to <m>t = x</m>. 
@@ -97,19 +109,21 @@
         We call <m>A</m> the accumulation function because it <em>accumulates</em> the signed area under the curve as we move from the starting point of <m>t = a</m> to some later point <m>t = x</m>. 
       </p>
     </solution>
+    -->
   </exercises>
 
   <exercises>
   <title>Part (c): Structure of the formula</title>
     <statement>
       <p>
-        Notice that there are two variables in the accumulation function, which are <m>x</m> and <m>t</m>. 
+        Notice that there are two variables in the accumulation function, <m>x</m> and <m>t</m>. 
         Explain why we need both <m>x</m> and <m>t</m> to define the accumulation function? 
       </p>
       <p>  
         For example, why wouldn't it make sense to define the accumulation function using ONLY <m>x</m> as the variable? 
       </p>
     </statement>
+    
     <hint>
       <p>
         Let's say we define the accumulation using only <m>x</m> as the variable like this: 
@@ -117,10 +131,44 @@
           A(x) = \int_a^x f(x)\, dx
         </me>
         Then how would we compute, let's say <m>A(2)</m>? 
-        We will need to replace ALL the <m>x</m>'s with <m>2</m>... 
-        Does the expression make sense?
+        Well, we will need to replace ALL the <m>x</m>'s with <m>2</m>... 
+        Does the expression make sense then?
       </p>
     </hint>
+    
+    <!--
+    <solution>
+      <p>
+        The short answer is that <m>x</m> and <m>t</m> do two <em>different</em> jobs since there are two types of functions here: 
+        <ul>
+          <li>
+            <p>
+              <m>x</m> is the input variable of the accumulation function, which represents the upper limit of integration of the integral. 
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>t</m> is just a <em>dummy variable</em> we use to represent the input of the function <m>f</m>. 
+            </p>
+          </li>
+        </ul>
+      </p>
+      <p>
+        The expression wouldn't make sense 
+      </p>
+    </solution>
+    -->
+  
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Format your work as a <alert>single pdf file</alert> and submit it in <url href="https://canvas.pdx.edu/courses/103253/assignments/1071234/">this assignment dropbox</url> on Canvas. 
+    </p>
+    <p>
+      Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts! 
+    </p>
   </exercises>
 
 </section>
