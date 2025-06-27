@@ -4,7 +4,7 @@
   <title>The Accumulation Function</title>
   <introduction>
     <p>
-      Let us first define what the accumulation function is! The definition is taken from your your textbook page 326 (but your textbook call it the area function). 
+      Let us first define what the accumulation function is! The definition is taken from your textbook page 326 (but your textbook call it the area function). 
     </p>
 
     <definition xml:id="def-AccumulationFunction">
@@ -34,14 +34,14 @@
         Compute <m>A(1)</m>, <m>A(2)</m>, <m>A(3)</m>, and <m>A(4)</m>. Then graph <m>y = f(t)</m> and indicate what these values represent on the graph. 
       </p>
     </statement>
-
+    
     <hint>
       <p>
         Julie went through a similar example in one of the lecture videos in this week. If you get stuck or you want to confirm that you are on the right track, find that example. 
       </p>
     </hint>
     
-    <!-- 
+    <!--
     <solution>
       <p>
         Below is the graph of <m>f(t) = 2t - 1</m>. 
@@ -74,10 +74,10 @@
           </latex-image>
         </image>
         
-        </figure>
+      </figure>
 
-      </solution> 
-      -->
+    </solution> 
+    -->
 
   </exercises>
 
@@ -110,6 +110,7 @@
       </p>
     </solution>
     -->
+
   </exercises>
 
   <exercises>

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-Proof-FTC" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Justifying the Fundamental Theorem of Calculus</title>
+  <title>Justifying THE Fundamental Theorem of Calculus</title>
 
   <p>
-    Just some introduction blahblahblah 
+    It turns out that THE fundamental theorem of calculus says the integration and differentiation are inverse operation. 
+    That is, they will cancel each other. 
+    This relation (at least half of it) is captured in the Fundamental Theorem of Calculus, Part II, in your textbook page 326. 
   </p>
 
 </section>
