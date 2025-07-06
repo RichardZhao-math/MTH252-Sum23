@@ -28,13 +28,76 @@ var ptx_lunr_docs = [
   "body": "  Let be a continuous function on an open interval and let be in . We define the accumulation function as    "
 },
 {
-  "id": "ch-wk3-activities",
+  "id": "sec-Proof-FTC",
   "level": "1",
-  "url": "ch-wk3-activities.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "Week 3 Activities",
-  "body": " Week 3 Activities   The activities will be available on Monday, July 7 and due on Sunday, July 13 .      "
+  "url": "sec-Proof-FTC.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Justifying THE Fundamental Theorem of Calculus",
+  "body": " Justifying THE Fundamental Theorem of Calculus   It turns out that THE fundamental theorem of calculus says the integration and differentiation are inverse processes. That is, they will cancel each other. This relation (at least half of it) is captured in the Fundamental Theorem of Calculus, Part II, in your textbook page 326. I also included it below:   The Fundamental Theorem of Calculus   Let be a continuous function on an open interval and let be in . Then the definite integral of from to , aka the accumulation function, is an antiderivative of on . That is, Equivalently,     You may be wondering why differentiation will cancel the integration. Well your textbook provided a technical proof in this section using the fancy Squeeze Theorem. In this investigation, we will explore the (same) proof but in a more intuitive sense.   P.S.: If you get stuck, feel free to find the technical proof in the textbook for inspiration (or ask Richard for help\/hint).    Part (a): Starting Point - Set up the Expression   Since the Fundamental Theorem of Calculus involved some derivatives, so let's do a quick review on what derivatives represents!  Recall that derivatives represent the instantaneous rate of change of some function at a specific value, and we can find the instantaneous rate of change by taking the limit of the average rate of change of a function as the gap between the values are going to 0.  Set up an expression to represent by (1) first setting up a fraction to represent the average rate of change of the function (which function), and then (2) taking the limit of the fraction as the gap of the values approaches 0.   P.S.: I included some hints below to help you get started, as a good setup is important for the next two parts of the investigation. If you need help or have questions, make sure to reach out to Richard. Feel free to reach out to him too if you just want to confirm that you have the right setup.    If you need help on the symbolic definition of derivatives...  Below is the definition of derivative:   Let be a function differentiable at . Then the derivative of , denoted as , is defined by        If you need help on picking the function...  Recall there are two functions involved, the accumulation function, , and another function under which we are finding the area, . Based on the Fundamental Theorem of Calculus, which function are we taking the derivative of, or ?     Part (b): Average Rate of Change of the Area   Let's focus on the average rate of change of the area. I coded a pretty picture below to help you visual the situation.       Simplify the fraction representing the average rate of change from to you came up with in part (a). Keep in mind that the goal for part (c) is to find the instantaneous rate of change so feel free to assume here is a small number.    If you need help on sorting out different area components...  Part of your expression in part (a) should contain something like and . What do they represent, in terms of color, in the graph provided?  Again, part of your expression in part (a) should contain something like . Which color in the graph represent this expression and how can we rewrite it using ONE definite integral?    If you need help on approximating the area of interest...  We learned some cool methods to approximate area under the curve in section 5.1. Let's use one of them to approximate the area of interest.  But... how many rectangles should I split up the area to? Recall that we assume is a very small number. That means using ONE skinny rectangle should suffice to apprixomate the area since is super very really small.  Also... which approximation method from section 5.1 should I use here... left-endpoint or right-endpoint approximation? Well Richard would say just pick one, following your heart.     Part (c): Instantaneous Rate of Change of the Area   Now that you have figured out the average rate of change of the area under the curve, what is the instantaneous rate of change (aka the derivative) of the accumulation function?  That is, what is the limit of the average rate of change you found in part (b) as approaches 0.    If you need help on evaluating the limit...  You should have an integral-free expression by now since you \"approximated\" the area using a skinny rectangle in part (b). Now that we have an expression to work with, what is the very first step you should do to evaluate the limit that your calculus 1 instructor told you, especially if you took calculus 1 with me.   If you play your cards right, the limit of the average rate of change, aka the derivative of the accumulation function, should be . What!!?? Differentiation undo the integration indeed!    When you complete the tasks...  Take a break and celebrate that you worked through all the complicated symbols and proved the Fundamental Theorem of Calculus!  Then continue to the next investigation this week by exploring the proof of the corollary of the Fundamental Theorem of Calculus, which is the big theorem in section 5.4 that you will be using again and again and again in this class!   "
+},
+{
+  "id": "thm-FTC",
+  "level": "2",
+  "url": "sec-Proof-FTC.html#thm-FTC",
+  "type": "Theorem",
+  "number": "2.1.1",
+  "title": "The Fundamental Theorem of Calculus.",
+  "body": " The Fundamental Theorem of Calculus   Let be a continuous function on an open interval and let be in . Then the definite integral of from to , aka the accumulation function, is an antiderivative of on . That is, Equivalently,    "
+},
+{
+  "id": "def-derivatives",
+  "level": "2",
+  "url": "sec-Proof-FTC.html#def-derivatives",
+  "type": "Definition",
+  "number": "2.1.2",
+  "title": "",
+  "body": "  Let be a function differentiable at . Then the derivative of , denoted as , is defined by    "
+},
+{
+  "id": "fig-Proof-FTC",
+  "level": "2",
+  "url": "sec-Proof-FTC.html#fig-Proof-FTC",
+  "type": "Figure",
+  "number": "2.1.3",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-Proof-FTC-Corollary",
+  "level": "1",
+  "url": "sec-Proof-FTC-Corollary.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Justifying An Corollary of the Fundamental Theorem of Calculus",
+  "body": " Justifying An Corollary of the Fundamental Theorem of Calculus   Well the Fundamental Theorem of Calculus, Part II, isn't the theorem we use a lot. Instead, we use the Fundamental Theorem of Calculus, Part I, a lot to help us evaluate definite integrals. This is actually a (most useful) corollary of the Fundamental Theorem of Calculus. The theorem is presented in your textbook page 318. I also included it below:    Assume that and that is continuous on . If is an antiderivative of on , then     Julie (and your textbook) provided a proof to this corollary by using the mean value theorem. We will approach things differently by proving this result using the accmulation function and the Fundamental Theorem of Calculus you proved in the previous investigation.   P.S.: The tasks below seem long but they are mostly procedures to follow. The goal here is to convince you the facts in each part are true.    Part (a): How \"different\" are all the antiderivatives of a function?   Let's take a step back a bit to section 5.3 about antiderivatives now. Recall the antiderivative of a function isn't unique (so a function can have a gazillon of different antiderivatives). But how different are the antiderivatives of a function?  Well we know the answer: All the antiderivatives of a function should differ by a constant ! This fact is being capture by the Theorem in your textbook page 310 (I included the theorem below).   The General Antiderivative   Let be an antiderivative of on . Then every antiderivative on is of the form of for some constant .    This is also the reason why we always need to stick a everytime we find the indefinite integrals since the indefinite integral of a function is defined as its general antiderivative.  Your job in this part is to explain why all antiderivatives of a function only differ by a constant.    If you need help on the steps of the proof...  Well your textbook include the proof for sure. Your textbook simply quoted the mean value theorem. Try to explain what is really going mathematically rather than simply quoting the MVT. I also broke down the proof into the following steps for you to follow.    Since we want to figure out how different the antiderivatives of a function are, let's pick two arbitrary antiderivative of a function, called and .    Well we want to find the difference of them, so let's subtract them and name the difference . That is, we define .    What do we know about the difference, ? Well one thing we know is the derivative of for sure. Richard claimed that ... Why so?    Put on your calculus 1 thinking cap! What type of function will have the derivative of ? This will help you wrap up the argument.       Part (b): Prove the Corollary of the FTC   Let be a continuous function on . By , it seems like the theorem works with any antiderivative of . Well, we proved in the first investigation this week that the accumulation, , is an antiderivative! So the theorem should work if we use in replace of in the theorem. We will prove instead and the actual proof will just be slightly different (but the idea remains!).  I will again code a pretty picture below to help you visualize the situation:       See that there is another value, , on the -axis! Symbolically speaking, it doesn't matter where is located but let's put it to the left of .  The reason why we needed an additional value of here is to work with the accumulation function. Let's quickly (re)define the accmulation function sllightly differently (simply because is being taken for something else).   Now your job in this part is to argue why the following equation is true by answering the following sub-questions:   Which area in the picture, in terms of color, is represented by . What about and ?    Rewrite using ONE definite integral. Then rewrite using another definite integral. Be careful about the limits of integration for both integrals.    Now simplify by condensing it to ONE single integral. If you play your cards right, the answer will be since the colors should match.       If you need help on condensing the integrals...  In the lecture video of section 5.2, Julie went through a couple properties of definite integrals. You will need two of them to condense the two definite integrals into . They are and Well the , , and represent different things so you probably want to sort out the symbols a bit.     Part (c): Why doesn't the matter in definite integrals?   Recall we always need to add the at the end of the indefinite integrals since antiderivatives of a function isn't unique. But why doesn't we need to add the in the definite integrals when it comes to the area...  Well let's answer this question using a specific example. Let's define as a function such that . The goal is to find following the Fundamental Theorem of Calculus exactly as follows:    Find an antiderivative of and label it . Rather than leaving the generic , let's pick a specific non-zero value for the .    Find and  exactly . That is, don't put things into the calculator and get some decimals out of it. The goal here is to track where the constant goes so it won't help us if the constant is being combined to some weird decimals.    Now find . Observe what happens to the constant you picked while you do the subtraction.    Now that you played with an actual example, explain why we don't need to add the when evaluating the definite integrals.     When you complete the tasks...  Format your work for this investigation, together with the previous investigation in this week, as a single pdf file and submit it in this assignment dropbox on Canvas.  Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts!   "
+},
+{
+  "id": "cor-FTC",
+  "level": "2",
+  "url": "sec-Proof-FTC-Corollary.html#cor-FTC",
+  "type": "Corollary",
+  "number": "2.2.1",
+  "title": "",
+  "body": "  Assume that and that is continuous on . If is an antiderivative of on , then    "
+},
+{
+  "id": "thm-GeneralAntiderivative",
+  "level": "2",
+  "url": "sec-Proof-FTC-Corollary.html#thm-GeneralAntiderivative",
+  "type": "Theorem",
+  "number": "2.2.2",
+  "title": "The General Antiderivative.",
+  "body": " The General Antiderivative   Let be an antiderivative of on . Then every antiderivative on is of the form of for some constant .   "
+},
+{
+  "id": "fig-Proof-FTC-Cor",
+  "level": "2",
+  "url": "sec-Proof-FTC-Corollary.html#fig-Proof-FTC-Cor",
+  "type": "Figure",
+  "number": "2.2.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "ch-wk5-activities",
