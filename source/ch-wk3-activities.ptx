@@ -4,24 +4,37 @@
   <title>Week 3 Activities</title>
 
   <introduction>
-    
-    <p>
-      The activities will be available on <alert> Monday, July 7</alert> and due on <alert>Sunday, July 13</alert>. 
-    </p>
-
-    <!--
+   
     <p> 
-      Recall that one way you learned last week to find the area under the curve is by <em>finding some antiderivative</em> first. This
+      The activities for this week will ask you to justify why the Fundamental Theorem of Calculus, both parts, you learned last week, are true. 
+      For simplicity, I will abbreviate the Fundamental Theorem of Calculus as FTC sometimes.   
     </p>
 
     <p>
+      Fun math fact: It turns out that the actual FTC says differentiation and integration are inverse processes, which is captured in the FTC, part II, in your textbook. 
+      Meanwhile, the FTC, part I, in your textbook is actually a very useful corollary of the FTC in terms of its practicality to evaluate definite integrals.  
+    </p>
+
+    <p>
+      Just a quick note (and also a small warning) that I used the word "proof/prove" a lot in the tasks. 
+      But what I really meant here is justify/explain/argue informally. 
+      I am not looking for any formal technical mathematical proofs in your responses. 
+      By the time I realized I used the word proof/prove too much, I lost track of the places in which I used these terms. 
+      So it will be difficult for me to trace back to these terms and change the word choice... 
+    </p>
+
+    <p>
+      When you are ready to investigate why the FTC's are true, click the buttons below and work through the tasks following the prompts. 
+      You are more than welcome to work with your classmates collaboratively but you will need to write up your own work. 
       When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas. 
     </p>
-    -->
 
   </introduction>
   
   <!-- include sections -->
-  <!--<xi:include href="sec-Proof-FTC.ptx" />-->
+  <xi:include href="sec-Proof-FTC.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Proof-FTC-Corollary.ptx" />
 
 </chapter>
