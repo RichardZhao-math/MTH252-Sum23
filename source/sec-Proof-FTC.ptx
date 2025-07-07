@@ -162,7 +162,7 @@
       </figure>
       
       <p>
-        Simplify the fraction representing the <alert>average rate of change</alert> from <m>x</m> to <m>x = h</m> you came up with in part (a). 
+        Simplify the fraction representing the <alert>average rate of change</alert> from <m>x</m> to <m>x + h</m> you came up with in part (a). 
         Keep in mind that the goal for part (c) is to find the instantaneous rate of change so feel free to assume <m>h</m> here is a small number. 
       </p>
     </statement>

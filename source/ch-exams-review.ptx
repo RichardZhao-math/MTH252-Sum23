@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<chapter xml:id="ch-exams-review" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Exam Review</title>
+
+  <introduction>
+    <p> 
+      There are three exams during the term: two midterm exams and a cumulative final exam.  
+    </p>
+
+    <p>
+      You can find more exam information in the corresponding modules in Canvas. 
+    </p>
+
+    <p>
+      The goal of this page is to provide you with some practice problems that you may consider working through in preparation of the exams. 
+      You don't need to complete all the problems nor turning in anything here. 
+      Answer keys are provided solely for you to check your answers. 
+      If you have questions about the work, feel free to reach out to Richard. 
+      Remember that he values work and thought process a lot more than just having the correct answer! 
+    </p>
+  </introduction>
+
+  <!-- include sections -->
+  <xi:include href="sec-midterm1-review.ptx" />
+
+</chapter>

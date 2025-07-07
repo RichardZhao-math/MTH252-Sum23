@@ -44,7 +44,7 @@
       </p>
       <p>
         Well we know the answer: <alert>All the antiderivatives of a function should differ by a constant</alert>! 
-        This fact is being capture by the Theorem in your textbook page 310 (I included the theorem below). 
+        This fact is being captured by the theorem in your textbook page 310 (I also included it below). 
       </p>
       <theorem xml:id="thm-GeneralAntiderivative">
         <title>The General Antiderivative</title>
@@ -67,15 +67,15 @@
     <hint>
       <title>If you need help on the steps of the proof...</title>
       <p>
-        Well your textbook include the proof for sure. 
-        Your textbook simply quoted the mean value theorem. 
+        Well your textbook includes the proof for sure. 
+        Yet, your textbook simply quoted the mean value theorem. 
         Try to explain what is really going mathematically rather than simply quoting the MVT. 
         I also broke down the proof into the following steps for you to follow. 
       </p>
       <ol marker="(i)">
         <li>
           <p>
-            Since we want to figure out how different the antiderivatives of a function are, let's pick two arbitrary antiderivative of a function, called <m>y = F(x)</m> and <m>y = G(x)</m>. 
+            Since we want to figure out how <em>different</em> the antiderivatives of a function are, let's pick two arbitrary antiderivative of a function, called <m>y = F(x)</m> and <m>y = G(x)</m>. 
           </p>
         </li>
         <li>
@@ -110,7 +110,7 @@
       <p>
         Let <m>f</m> be a continuous function on <m>[a,b]</m>. 
         By <xref ref="cor-FTC"/>, it seems like the theorem works with any antiderivative of <m>f</m>. 
-        Well, we proved in the first investigation this week that the accumulation, <m>A</m>, is an antiderivative! 
+        Well, we proved in the first investigation this week that the accumulation function, <m>A</m>, is an antiderivative! 
         So the theorem should work if we use <m>A</m> in replace of <m>F</m> in the theorem. 
         We will prove 
         <me>
@@ -190,13 +190,13 @@
       </figure>
 
       <p>
-        See that there is another value, <m>c</m>, on the <m>x</m>-axis! 
+        See that there is another value, <m>c</m>, on the <m>x</m>-axis. 
         Symbolically speaking, it doesn't matter where <m>c</m> is located but let's put it to the left of <m>a</m>. 
       </p>
 
       <p>
         The reason why we needed an additional value of <m>c</m> here is to work with the accumulation function. 
-        Let's quickly (re)define the accmulation function sllightly differently (simply because <m>a</m> is being taken for something else). 
+        Let's quickly (re)define the accumulation function slightly bit different (simply because <m>a</m> is being taken for something else). 
         <me>
           A(x) = \int_c^x f(t)\, dt
         </me>
@@ -267,7 +267,7 @@
       <ol marker="(i)">
         <li>
           <p>
-            Find an antiderivative of <m>F(x) = e^x</m> and label it <m>F(x)</m>. 
+            Find an antiderivative of <m>f(x) = e^x</m> and label it <m>F(x)</m>. 
             Rather than leaving the generic <m>+ C</m>, let's pick a specific <alert>non-zero</alert> value for the <m>C</m>. 
           </p>
         </li>
@@ -275,7 +275,7 @@
           <p>
             Find <m>F(3)</m> and <m>F(1)</m> <em>exactly</em>. 
             That is, don't put things into the calculator and get some decimals out of it. 
-            The goal here is to track where the constant goes so it won't help us if the constant is being combined to some weird decimals. 
+            The goal here is to track where the constant goes so it won't help us if the constant is being absorbed into some weird decimals. 
           </p>
         </li>
         <li>

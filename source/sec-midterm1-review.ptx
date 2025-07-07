@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<worksheet xml:id="sec-midterm1-review" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Midterm Exam #1 Practice Problems</title>
+  <introduction>
+    <p>
+        The first midterm exam will cover chapter 5 about the basics of integration. 
+    </p>
+
+    <p>
+        Below you will find some practice problems in chapter 5. 
+        Feel free to try some of the problems in preparation of the exam. 
+        The answer key is also included solely for you to check your answer. 
+        No peeking before you try solving some problems! 
+        One illusion students sometimes hold is that they can master the math concepts by simply reading it. 
+        No it won't work! 
+    </p>
+
+    <p>
+        If you have any questions, feel free to reach out to Richard. 
+    </p>
+  </introduction>
+
+  <exercise>
+    <p>
+        Consider the function <m>f(x) = \cos(x)</m> from <m>x = 0</m> to <m>x = \frac{\pi}{2}</m>. 
+    </p>
+    <ol marker="(a)">
+        <li>
+            <p>
+                Graph the function <m>y = f(x)</m> and label the area under the curve. 
+            </p>
+        </li>
+        <li>
+            <p>
+                Approximate the area using the <alert>right-endpoint</alert> approximation with <m>N = 4</m>. 
+                That is, find <m>R_4</m>. 
+            </p>
+        </li>
+        <li>
+            <p>
+                Approximate the area using the <alert>left-endpoint</alert> approximation with <m>N = 4</m>. 
+                That is, find <m>L_4</m>. 
+            </p>
+        </li>
+    </ol>
+  </exercise>
+
+  <exercise>
+    <p>
+        Approximate the area under the function <m>g(x) = x - 2\ln(x)</m> from <m>x = 1</m> to <m>x = 5</m> by finding <m>M_4</m>. 
+    </p>
+  </exercise>
+
+  <exercise>
+    <statement>
+        <p>
+            Given that 
+            <me>
+                \int_0^1 f(x) \, dx = 1 , \qquad \int_0^2 f(x)\, dx = 4, \qquad \text{and } \qquad \int_1^4 f(x)\, dx = 7
+            </me>
+            Evaluate the following definite integrals.
+        </p>
+        <ol marker="(a)">
+            <li>
+                <p>
+                    <m>\displaystyle \int_0^4 f(x) \, dx</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\displaystyle \int_1^2 f(x) \, dx</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\displaystyle \int_4^1 f(x) \, dx</m>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <m>\displaystyle \int_2^4 f(x) \, dx</m>
+                </p>
+            </li>
+        </ol>
+    </statement>
+  </exercise>
+
+</worksheet>
