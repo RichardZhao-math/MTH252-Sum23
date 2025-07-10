@@ -41,12 +41,11 @@
       </p>
     </hint>
     
-    <!--
     <solution>
       <p>
         Below is the graph of <m>f(t) = 2t - 1</m>. 
       </p>
-      <figure xml:id="fig-tikz">
+      <figure>
         <caption>The Graph of <m>f(t) = 2t - 1</m></caption>
         <image width="50%">
         
@@ -55,29 +54,245 @@
               \begin{axis}[
                 axis lines=middle,
                 xlabel={$t$},
-                ylabel={$f(t)$},
-                xmin=-0.5, xmax=5.5,
-                ymin=-0.5, ymax=10.5,
-                xtick={1,2,3,4,5},
-                ytick={1,2,3,4,5,6,7,8,9,10},
-                domain=-0.5:5.5,
+                ylabel={$y$},
+                xmin=-0.5, xmax=4.5,
+                ymin=-0.5, ymax=7.5,
+                xtick={0,1,2,3,4},
+                ytick={0,2,4,6},
+                minor xtick={1,3},
+                minor ytick={1,3,5,7},
                 samples=100, 
-                width=1\textwidth, % Adjust the width as needed
-                height=1\textwidth, % Adjust the height as needed
-                ]
+              ]
 
-              % Graph of the function
-              \addplot[blue, ultra thick, smooth] {2*x - 1};
-            
+                % Graph of the function
+                \addplot[blue, ultra thick, smooth, domain=-0.15:4.15] {2*x - 1};
+
               \end{axis}
             \end{tikzpicture}
           </latex-image>
         </image>
+      </figure>
+      <p>
+        <m>A(1)</m> represents the area under the line <m>y = f(t)</m> from <m>t = 1</m> to <m>t = 1</m>. 
+        Graphically speaking, the area is 0, shown in the diagram below. 
+      </p>
+      <figure>
+        <caption>The Diagram of <m>A(1)</m></caption>
+        <image width="50%">
         
+          <latex-image >
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines=middle,
+                xlabel={$t$},
+                ylabel={$y$},
+                xmin=-0.5, xmax=4.5,
+                ymin=-0.5, ymax=7.5,
+                xtick={0,1,2,3,4},
+                ytick={0,2,4,6},
+                minor xtick={1,3},
+                minor ytick={1,3,5,7},
+                samples=100, 
+              ]
+
+                % Graph of the function
+                \addplot[blue, ultra thick, smooth, domain=-0.15:4.15] {2*x - 1};
+
+                % Vertical dashed lines
+                \draw[dashed] (axis cs:1, -0.15) -- (axis cs:1, 1);
+                \draw[dashed] (axis cs:1, -0.15) -- (axis cs:1, 1);
+
+                % Shaded region between t=1 and t=1
+                \addplot [
+                  draw=none,
+                  fill=green!70,
+                  opacity=0.7,
+                ]
+                coordinates {
+                  (1,0)
+                  (1, {2*1 - 1})
+                  (1, {2*1.5 - 1})
+                  (1, {2*2 - 1})
+                  (1,0)
+                } -- cycle;
+
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
       </figure>
 
+      <p>
+        <m>A(2)</m> represents the area under the line <m>y = f(t)</m> from <m>t = 1</m> to <m>t = 2</m>. 
+        Graphically speaking, the enclosed region is a trapezoid, with the area of 
+        <me>
+          A(2) = \frac{f(1) + f(2)}{2} = \frac{1 + 3}{2} = 2
+        </me>
+        The diagram is shown below. 
+      </p>
+      <figure>
+        <caption>The Diagram of <m>A(2)</m></caption>
+        <image width="50%">
+        
+          <latex-image >
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines=middle,
+                xlabel={$t$},
+                ylabel={$y$},
+                xmin=-0.5, xmax=4.5,
+                ymin=-0.5, ymax=7.5,
+                xtick={0,1,2,3,4},
+                ytick={0,2,4,6},
+                minor xtick={1,3},
+                minor ytick={1,3,5,7},
+                domain=-1.5:3.5,
+                samples=100, 
+              ]
+
+                % Graph of the function
+                \addplot[blue, ultra thick, smooth, domain=-0.15:4.15] {2*x - 1};
+
+                % Vertical dashed lines
+                \draw[dashed] (axis cs:1, -0.15) -- (axis cs:1, 1);
+                \draw[dashed] (axis cs:2, -0.15) -- (axis cs:2, 3);
+
+                % Shaded region between t=1 and t=2
+                \addplot [
+                  draw=none,
+                  fill=green!70,
+                  opacity=0.7,
+                ]
+                coordinates {
+                  (1,0)
+                  (1, {2*1 - 1})
+                  (1.5, {2*1.5 - 1})
+                  (2, {2*2 - 1})
+                  (2,0)
+                } -- cycle;
+
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        <m>A(3)</m> represents the area under the line <m>y = f(t)</m> from <m>t = 1</m> to <m>t = 3</m>. 
+        Graphically speaking, the enclosed region is a trapezoid, with the area of 
+        <me>
+          A(3) = \frac{f(1) + f(3)}{2} = \frac{1 + 5}{2} = 3
+        </me>
+        The diagram is shown below. 
+      </p>
+      <figure>
+        <caption>The Diagram of <m>A(3)</m></caption>
+        <image width="50%">
+        
+          <latex-image >
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines=middle,
+                xlabel={$t$},
+                ylabel={$y$},
+                xmin=-0.5, xmax=4.5,
+                ymin=-0.5, ymax=7.5,
+                xtick={0,1,2,3,4},
+                ytick={0,2,4,6},
+                minor xtick={1,3},
+                minor ytick={1,3,5,7},
+                domain=-1.5:3.5,
+                samples=100, 
+              ]
+
+                % Graph of the function
+                \addplot[blue, ultra thick, smooth, domain=-0.15:4.15] {2*x - 1};
+
+                % Vertical dashed lines
+                \draw[dashed] (axis cs:1, -0.15) -- (axis cs:1, 1);
+                \draw[dashed] (axis cs:3, -0.15) -- (axis cs:3, 5);
+
+                % Shaded region between t=1 and t=3
+                \addplot [
+                  draw=none,
+                  fill=green!70,
+                  opacity=0.7,
+                ]
+                coordinates {
+                  (1,0)
+                  (1, {2*1 - 1})
+                  (1.5, {2*1.5 - 1})
+                  (2, {2*2 - 1})
+                  (2.5, {2*2.5 - 1})
+                  (3, {2*3 - 1})
+                  (3,0)
+                } -- cycle;
+
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
+
+      <p>
+        <m>A(4)</m> represents the area under the line <m>y = f(t)</m> from <m>t = 1</m> to <m>t = 4</m>. 
+        Graphically speaking, the enclosed region is a trapezoid, with the area of 
+        <me>
+          A(4) = \frac{f(1) + f(4)}{2} = \frac{1 + 7}{2} = 4
+        </me>
+        The diagram is shown below. 
+      </p>
+      <figure>
+        <caption>The Diagram of <m>A(4)</m></caption>
+        <image width="50%">
+        
+          <latex-image >
+            \begin{tikzpicture}
+              \begin{axis}[
+                axis lines=middle,
+                xlabel={$t$},
+                ylabel={$y$},
+                xmin=-0.5, xmax=4.5,
+                ymin=-0.5, ymax=7.5,
+                xtick={0,1,2,3,4},
+                ytick={0,2,4,6},
+                minor xtick={1,3},
+                minor ytick={1,3,5,7},
+                domain=-1.5:3.5,
+                samples=100, 
+              ]
+
+                % Graph of the function
+                \addplot[blue, ultra thick, smooth, domain=-0.15:4.15] {2*x - 1};
+
+                % Vertical dashed lines
+                \draw[dashed] (axis cs:1, -0.15) -- (axis cs:1, 1);
+                \draw[dashed] (axis cs:4, -0.15) -- (axis cs:4, 7);
+
+                % Shaded region between t=1 and t=3
+                \addplot [
+                  draw=none,
+                  fill=green!70,
+                  opacity=0.7,
+                ]
+                coordinates {
+                  (1,0)
+                  (1, {2*1 - 1})
+                  (1.5, {2*1.5 - 1})
+                  (2, {2*2 - 1})
+                  (2.5, {2*2.5 - 1})
+                  (3, {2*3 - 1})
+                  (3.5, {2*3.5 - 1})
+                  (4, {2*4 - 1})
+                  (4,0)
+                } -- cycle;
+
+              \end{axis}
+            \end{tikzpicture}
+          </latex-image>
+        </image>
+      </figure>
     </solution> 
-    -->
 
   </exercises>
 
@@ -95,7 +310,6 @@
       </p>
     </statement>
 
-    <!--
     <solution>
       <p>
         Notice that the variable <m>x</m> appears to be in the place of the upper limit of integration in the integral. 
@@ -107,9 +321,10 @@
       </p>
       <p>
         We call <m>A</m> the accumulation function because it <em>accumulates</em> the signed area under the curve as we move from the starting point of <m>t = a</m> to some later point <m>t = x</m>. 
+        To make it more generalized, the accumulation function <em>accumulates</em> some quantity (and it doesn't have to be some area) between two points. 
+        We will look at a more generalized version of integrals in week 5 investigation. 
       </p>
     </solution>
-    -->
 
   </exercises>
 
@@ -137,7 +352,6 @@
       </p>
     </hint>
     
-    <!--
     <solution>
       <p>
         The short answer is that <m>x</m> and <m>t</m> do two <em>different</em> jobs since there are two types of functions here: 
@@ -155,10 +369,24 @@
         </ul>
       </p>
       <p>
-        The expression wouldn't make sense 
+        If we define the accumulation function only using <m>x</m> as an variable like
+        <me>
+          A(x) = \int_a^x f(x)\, dx
+        </me>
+        Then the expression wouldn't make sense since it is impossible to evaluate this function. 
+      </p>
+      <p>
+        As an example, <m>A(2)</m> would be
+        <me>
+          A(2) = \int_a^2 f(2)\, d2
+        </me>
+        Well... <m>f(2)</m> is a constant (the output of the function with an input of 2) so we are really integrating a number here (boring). 
+        Also, what is <m>d2</m>... 
+        Well we know that the symbol <m>d</m> here represents the infinitesimally small amount of change. 
+        But 2 is a constant and the value of 2 will never change... 
+        So <m>d2</m> doesn't really make sense mathematically. 
       </p>
     </solution>
-    -->
   
   </exercises>
 
