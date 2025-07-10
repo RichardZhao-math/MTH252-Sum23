@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "The Accumulation Function",
-  "body": " The Accumulation Function   Let us first define what the accumulation function is! The definition is taken from your textbook page 326 (but your textbook call it the area function).    Let be a continuous function on an open interval and let be in . We define the accumulation function as     Using our knowledge of function notations, we know that the name of the accumulation function is , with the input of and the output of .    Part (a): An example   Let and . Then we can define the accumulation function here to be Compute , , , and . Then graph and indicate what these values represent on the graph.    Julie went through a similar example in one of the lecture videos in this week. If you get stuck or you want to confirm that you are on the right track, find that example.      Part (b): Meaning of the function   Functions have inputs and outputs. What does the input of the accumulation function, , represent and what does the output of the accumulation function, , represent? Be as specific as possible in your answer.  After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the accumulation function ?      Part (c): Structure of the formula   Notice that there are two variables in the accumulation function, and . Explain why we need both and to define the accumulation function?  For example, why wouldn't it make sense to define the accumulation function using ONLY as the variable?    Let's say we define the accumulation using only as the variable like this: Then how would we compute, let's say ? Well, we will need to replace ALL the 's with ... Does the expression make sense then?      When you complete the tasks...  Format your work as a single pdf file and submit it in this assignment dropbox on Canvas.  Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts!   "
+  "body": " The Accumulation Function   Let us first define what the accumulation function is! The definition is taken from your textbook page 326 (but your textbook call it the area function).    Let be a continuous function on an open interval and let be in . We define the accumulation function as     Using our knowledge of function notations, we know that the name of the accumulation function is , with the input of and the output of .    Part (a): An example   Let and . Then we can define the accumulation function here to be Compute , , , and . Then graph and indicate what these values represent on the graph.    Julie went through a similar example in one of the lecture videos in this week. If you get stuck or you want to confirm that you are on the right track, find that example.    Below is the graph of .   The Graph of       represents the area under the line from to . Graphically speaking, the area is 0, shown in the diagram below.   The Diagram of       represents the area under the line from to . Graphically speaking, the enclosed region is a trapezoid, with the area of The diagram is shown below.   The Diagram of       represents the area under the line from to . Graphically speaking, the enclosed region is a trapezoid, with the area of The diagram is shown below.   The Diagram of       represents the area under the line from to . Graphically speaking, the enclosed region is a trapezoid, with the area of The diagram is shown below.   The Diagram of         Part (b): Meaning of the function   Functions have inputs and outputs. What does the input of the accumulation function, , represent and what does the output of the accumulation function, , represent? Be as specific as possible in your answer.  After you identified the meaning of the inputs and outputs, try to come up with a reason why we call this the accumulation function ?    Notice that the variable appears to be in the place of the upper limit of integration in the integral. This implies that the input of the accumulation function, , represents the upper limit of integration . It tells us how \"far\" we are integrating from the starting point of .  The output of the accumulation function, , represents the signed area under the curve of from to .  We call the accumulation function because it accumulates the signed area under the curve as we move from the starting point of to some later point . To make it more generalized, the accumulation function accumulates some quantity (and it doesn't have to be some area) between two points. We will look at a more generalized version of integrals in week 5 investigation.     Part (c): Structure of the formula   Notice that there are two variables in the accumulation function, and . Explain why we need both and to define the accumulation function?  For example, why wouldn't it make sense to define the accumulation function using ONLY as the variable?    Let's say we define the accumulation using only as the variable like this: Then how would we compute, let's say ? Well, we will need to replace ALL the 's with ... Does the expression make sense then?    The short answer is that and do two different jobs since there are two types of functions here:    is the input variable of the accumulation function, which represents the upper limit of integration of the integral.     is just a dummy variable we use to represent the input of the function .     If we define the accumulation function only using as an variable like Then the expression wouldn't make sense since it is impossible to evaluate this function.  As an example, would be Well... is a constant (the output of the function with an input of 2) so we are really integrating a number here (boring). Also, what is ... Well we know that the symbol here represents the infinitesimally small amount of change. But 2 is a constant and the value of 2 will never change... So doesn't really make sense mathematically.     When you complete the tasks...  Format your work as a single pdf file and submit it in this assignment dropbox on Canvas.  Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts!   "
 },
 {
   "id": "def-AccumulationFunction",
@@ -26,6 +26,51 @@ var ptx_lunr_docs = [
   "number": "1.1.1",
   "title": "",
   "body": "  Let be a continuous function on an open interval and let be in . We define the accumulation function as    "
+},
+{
+  "id": "sec-Accumulation-Function-3-4-2",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#sec-Accumulation-Function-3-4-2",
+  "type": "Figure",
+  "number": "1.1.2",
+  "title": "",
+  "body": " The Graph of     "
+},
+{
+  "id": "sec-Accumulation-Function-3-4-4",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#sec-Accumulation-Function-3-4-4",
+  "type": "Figure",
+  "number": "1.1.3",
+  "title": "",
+  "body": " The Diagram of     "
+},
+{
+  "id": "sec-Accumulation-Function-3-4-6",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#sec-Accumulation-Function-3-4-6",
+  "type": "Figure",
+  "number": "1.1.4",
+  "title": "",
+  "body": " The Diagram of     "
+},
+{
+  "id": "sec-Accumulation-Function-3-4-8",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#sec-Accumulation-Function-3-4-8",
+  "type": "Figure",
+  "number": "1.1.5",
+  "title": "",
+  "body": " The Diagram of     "
+},
+{
+  "id": "sec-Accumulation-Function-3-4-10",
+  "level": "2",
+  "url": "sec-Accumulation-Function.html#sec-Accumulation-Function-3-4-10",
+  "type": "Figure",
+  "number": "1.1.6",
+  "title": "",
+  "body": " The Diagram of     "
 },
 {
   "id": "sec-Proof-FTC",
