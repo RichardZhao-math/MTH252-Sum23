@@ -102,15 +102,15 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.5';
+eBookConfig.runestone_version = '7.9.0';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
-<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
+<script src="_static/prefix-runtime.a5f1dc7727a1aa22.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.014cb392a13bd045.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
 </head>
@@ -162,7 +162,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-3" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (a): Starting Point - Set up the Expression</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (b): Average Rate of Change of the Area</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-5" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (c): Instantaneous Rate of Change of the Area</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-6" class="internal"><span class="codenumber">2.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-8" class="internal"><span class="codenumber">2.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -238,6 +238,18 @@ f'(x) = \lim_{h\to 0}\frac{f(x + h) - f(x)}{h}\tag{2.1.3}
 <div class="para" id="sec-Proof-FTC-3-4-2">Recall there are two functions involved, the accumulation function, <span class="process-math">\(A\text{,}\)</span> and another function under which we are finding the area, <span class="process-math">\(f\text{.}\)</span> Based on the Fundamental Theorem of Calculus, which function are we taking the derivative of, <span class="process-math">\(A\)</span> or <span class="process-math">\(f\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-3-4-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 2.1.2: If you need help on picking the function..."><a href="#sec-Proof-FTC-3-4" title="Copy permalink for Hint 2.1.2: If you need help on picking the function...">🔗</a></div>
+</div></details><details id="sec-Proof-FTC-3-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-Proof-FTC-3-5-1">
+<div class="para">The function we are taking the derivative of in the theorem is the accumulation function, <span class="process-math">\(A\text{.}\)</span> Then we can set up the expression by applying the limit definition of derivatives to the function <span class="process-math">\(A\)</span> as follows.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A'(x) = \lim_{h\to 0} \frac{A(x + h) - A(x)}{h}
+\end{equation*}
+</div>
+<div class="para">Recall that the fraction, without the limit symbol, represents the average rate of change of the area under the curve from <span class="process-math">\(t = x\)</span> to <span class="process-math">\(t = x + h\text{.}\)</span> By taking the limit of the average rate of change as the gap from <span class="process-math">\(x\)</span> to <span class="process-math">\(x + h\)</span> approaches 0, we obtain the instantaneous rate of change, aka the derivative.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-3-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.1"><a href="#sec-Proof-FTC-3-5" title="Copy permalink for Solution 2.1.1">🔗</a></div>
 </div></details><div class="autopermalink" data-description="Exercises 2.1: Part (a): Starting Point - Set up the Expression"><a href="#sec-Proof-FTC-3" title="Copy permalink for Exercises 2.1: Part (a): Starting Point - Set up the Expression">🔗</a></div></section><section class="exercises" id="sec-Proof-FTC-4"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (b): Average Rate of Change of the Area</span>
 </h3>
@@ -259,6 +271,45 @@ f'(x) = \lim_{h\to 0}\frac{f(x + h) - f(x)}{h}\tag{2.1.3}
 <div class="para" id="sec-Proof-FTC-4-4-4">Also... which approximation method from section 5.1 should I use here... left-endpoint or right-endpoint approximation? Well Richard would say just pick one, following your heart.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-4-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Hint 2.1.2: If you need help on approximating the area of interest..."><a href="#sec-Proof-FTC-4-4" title="Copy permalink for Hint 2.1.2: If you need help on approximating the area of interest...">🔗</a></div>
+</div></details><details id="sec-Proof-FTC-4-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-Proof-FTC-4-5-1">
+<div class="para">Now let’s focus on simplifying the average rate of change,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A(x + h) - A(x)}{h}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Proof-FTC-4-5-2">
+<div class="para">By looking at the pretty figure, we observe that</div>
+<ul class="disc" id="sec-Proof-FTC-4-5-2-1">
+<li id="sec-Proof-FTC-4-5-2-1-1">
+<div class="para" id="sec-Proof-FTC-4-5-2-1-1-1">
+<span class="process-math">\(A(x + h)\)</span> represents the total area of the green and orange region.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-5-2-1-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Proof-FTC-4-5-2-1-1" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Proof-FTC-4-5-2-1-2">
+<div class="para" id="sec-Proof-FTC-4-5-2-1-2-1">
+<span class="process-math">\(A(x)\)</span> represents the area of the green region.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-5-2-1-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Proof-FTC-4-5-2-1-2" title="Copy permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="para">This implies that <span class="process-math">\(A(x + h) - A(x)\)</span> should give us the area of the orange region. Remember that <span class="process-math">\(h\)</span> is a super very really small number, so the orange region should be a super skinny strip whose area can approximated using a rectangle.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-Proof-FTC-4-5-3">
+<div class="para">Recall the fancy left-endpoint and right-endpoint approximation we learned back in section 5.1? They seem like great methods to approximate the area of the skinny orange strip. The width of the orange strip is <span class="process-math">\(h\)</span> and the height is either <span class="process-math">\(f(x)\)</span> or <span class="process-math">\(f(x + h)\)</span> depending on which method you picked. It turns out it doesn’t matter which one you picked as the height since <span class="process-math">\(h\)</span> is super very really small anyway. For demonstration, I will pick <span class="process-math">\(f(x + h)\)</span> as the height of the orange strip. Then the average rate of change of the area is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{A(x + h) - A(x)}{h} = \frac{h\cdot f(x + h)}{h} = f(x + h)
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-4-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.1"><a href="#sec-Proof-FTC-4-5" title="Copy permalink for Solution 2.1.1">🔗</a></div>
 </div></details><div class="autopermalink" data-description="Exercises 2.1: Part (b): Average Rate of Change of the Area"><a href="#sec-Proof-FTC-4" title="Copy permalink for Exercises 2.1: Part (b): Average Rate of Change of the Area">🔗</a></div></section><section class="exercises" id="sec-Proof-FTC-5"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (c): Instantaneous Rate of Change of the Area</span>
 </h3>
@@ -271,14 +322,30 @@ f'(x) = \lim_{h\to 0}\frac{f(x + h) - f(x)}{h}\tag{2.1.3}
 <div class="autopermalink" data-description="Hint 2.1.1: If you need help on evaluating the limit..."><a href="#sec-Proof-FTC-5-3" title="Copy permalink for Hint 2.1.1: If you need help on evaluating the limit...">🔗</a></div>
 </div></details><div class="para" id="sec-Proof-FTC-5-4">If you play your cards right, the limit of the average rate of change, aka the derivative of the accumulation function, should be <span class="process-math">\(f(x)\text{.}\)</span> What!!?? Differentiation undo the integration indeed!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-5-4" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises 2.1: Part (c): Instantaneous Rate of Change of the Area"><a href="#sec-Proof-FTC-5" title="Copy permalink for Exercises 2.1: Part (c): Instantaneous Rate of Change of the Area">🔗</a></div></section><section class="exercises" id="sec-Proof-FTC-6"><h3 class="heading hide-type">
+<details id="sec-Proof-FTC-5-5" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-Proof-FTC-5-5-1">
+<div class="para">Now that we figured out the average rate of change, the derivative is just the limit of the average rate of change we found in part (b) as <span class="process-math">\(h\)</span> approaches 0. That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A'(x) = \lim_{h\to 0} f(x + h) = f(x + 0) = f(x)
+\end{equation*}
+</div>
+<div class="para">We proved it!</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-5-5-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 2.1.1"><a href="#sec-Proof-FTC-5-5" title="Copy permalink for Solution 2.1.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Exercises 2.1: Part (c): Instantaneous Rate of Change of the Area"><a href="#sec-Proof-FTC-5" title="Copy permalink for Exercises 2.1: Part (c): Instantaneous Rate of Change of the Area">🔗</a></div></section><div class="para" id="sec-Proof-FTC-6">Julie also proved the FTC in one of her lecture videos. Feel free to check it out if you are more of a visual person!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-6" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Proof-FTC-7">Here is the video: <a class="external" href="https://media.pdx.edu/media/t/1_82n44iqx" target="_blank">https://media.pdx.edu/media/t/1_82n44iqx</a><details class="ptx-footnote" aria-live="polite" id="sec-Proof-FTC-7-2"><summary class="ptx-footnote__number" title="Footnote 2.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-Proof-FTC-7-2"><code class="code-inline tex2jax_ignore">media.pdx.edu/media/t/1_82n44iqx</code></div></details><div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-7" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<section class="exercises" id="sec-Proof-FTC-8"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">When you complete the tasks...</span>
 </h3>
-<div class="para" id="sec-Proof-FTC-6-2">Take a break and celebrate that you worked through all the complicated symbols and proved the Fundamental Theorem of Calculus!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-6-2" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-Proof-FTC-8-2">Take a break and celebrate that you worked through all the complicated symbols and proved the Fundamental Theorem of Calculus!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-8-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-Proof-FTC-6-3">Then continue to the <a class="external" href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Proof-FTC-Corollary.html" target="_blank">next assignment</a><details class="ptx-footnote" aria-live="polite" id="sec-Proof-FTC-6-3-2"><summary class="ptx-footnote__number" title="Footnote 2.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-Proof-FTC-6-3-2"><code class="code-inline tex2jax_ignore">richardzhao-math.github.io/MTH252-Sum23/sec-Proof-FTC-Corollary.html</code></div></details> this week by exploring the proof of the corollary of the Fundamental Theorem of Calculus, which is the big theorem in section 5.4 that you will be using again and again and again in this class!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-6-3" title="Copy permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-Proof-FTC-8-3">Then continue to the <a class="external" href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Proof-FTC-Corollary.html" target="_blank">next assignment</a><details class="ptx-footnote" aria-live="polite" id="sec-Proof-FTC-8-3-2"><summary class="ptx-footnote__number" title="Footnote 2.1.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec-Proof-FTC-8-3-2"><code class="code-inline tex2jax_ignore">richardzhao-math.github.io/MTH252-Sum23/sec-Proof-FTC-Corollary.html</code></div></details> this week by exploring the proof of the corollary of the Fundamental Theorem of Calculus, which is the big theorem in section 5.4 that you will be using again and again and again in this class!<div class="autopermalink" data-description="Paragraph"><a href="#sec-Proof-FTC-8-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises 2.1: When you complete the tasks..."><a href="#sec-Proof-FTC-6" title="Copy permalink for Exercises 2.1: When you complete the tasks...">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Justifying THE Fundamental Theorem of Calculus"><a href="#sec-Proof-FTC" title="Copy permalink for Section 2.1: Justifying THE Fundamental Theorem of Calculus">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercises 2.1: When you complete the tasks..."><a href="#sec-Proof-FTC-8" title="Copy permalink for Exercises 2.1: When you complete the tasks...">🔗</a></div></section><div class="autopermalink" data-description="Section 2.1: Justifying THE Fundamental Theorem of Calculus"><a href="#sec-Proof-FTC" title="Copy permalink for Section 2.1: Justifying THE Fundamental Theorem of Calculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="ch-wk3-activities.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Proof-FTC-Corollary.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
