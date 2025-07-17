@@ -102,6 +102,39 @@
       </ol>
     </hint>
 
+    <solution>
+      <p>
+        The whole idea of this argument relies on the fact that only constants will give the derivative of 0. 
+      </p>
+      <p>
+        To make the argument more rigorous, we will let <m>F</m> and <m>G</m> be some antiderivative of the same function <m>f</m>. 
+        That is, <m>F' = f</m> and <m>G' = f</m>. 
+      </p>
+      <p>
+        Since we care about the difference of them, let's define their difference to be <m>H</m> where <m>H(x) = F(x) - G(x)</m>. 
+      </p>
+      <p>
+        We can certainly take the derivative of <m>H</m>! By the linearity, we have
+        <md>
+          <mrow> H'(x) \amp = \big(F(x) - G(x)\big)' </mrow>
+          <mrow> \amp = F'(x) - G'(x) </mrow>
+          <mrow> \amp = f(x) - f(x) </mrow>
+          <mrow> \amp = 0 </mrow>
+        </md>
+        So we know the derivative of the difference is 0. 
+      </p>
+      <p>
+        What do we know about the type of function whose derivative is 0... Well from calculus 1, we know that (only) constant functions will have the derivative of 0. 
+        That is, <m>H(x) = C</m> for some random constant <m>C</m>. 
+      </p>
+      <p>
+        Putting everything together, we know that <m>F(x) - G(x) = C</m>, which implies that <m>F(x) = G(x) + C</m>. 
+      </p>
+      <p>
+        Now you see where the <m>+ C</m> comes from! 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -250,6 +283,24 @@
       </p>
     </hint>
 
+    <solution>
+      <p>
+        Using the definition of the accumulation function in the prompt, we know that
+        <me>
+          A(b) = \int_c^b f(x)\, dx \quad \text{ and }\quad
+          A(a) = \int_c^a f(x)\, dx 
+        </me>
+        Using the properties of definite integrals, we have
+        <md>
+          <mrow> A(b) - A(a) \amp = \int_c^b f(x)\, dx - \int_c^a f(x)\, dx </mrow>
+          <mrow> \amp =  \int_c^b f(x)\, dx - \left( -\int_a^c f(x)\, dx\right) </mrow>
+          <mrow> \amp = \int_c^b f(x)\, dx + \int_a^c f(x)\, dx</mrow>
+          <mrow> \amp = \int_a^b f(x)\, dx </mrow>
+        </md>
+        See that it doesn't matter where <m>c</m> is located as I didn't use the figure for this symbol-pushing proof. 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -290,6 +341,42 @@
         Now that you played with an actual example, explain <alert>why</alert> we don't need to add the <m>+C</m> when evaluating the definite integrals. 
       </p>
     </statement>
+
+    <solution>
+      <p>
+        We are given that <m>f(x) = e^x</m>. 
+        We know that 
+        <me>
+          F(x) = \int e^x\, dx = e^x + C
+        </me>
+        Let's pick <m>C = 76,877</m>. 
+        Then the antiderivative here is 
+        <me>
+          F(x) = e^x + 76,877
+        </me>
+        By the FTC, we know that
+        <md>
+          <mrow> \int_1^3 e^x\, dx \amp = F(3) - F(1) </mrow>
+          <mrow> \amp = \left(e^3 + 76,877\right) - \left(e^1 + 76,877\right) </mrow>
+          <mrow> \amp = e^3 + 76,877 - e^1 - 76,877 </mrow>
+          <mrow> \amp = e^3 - e^1</mrow>
+        </md>
+      </p>
+      <p>
+        See that the constant I picked, <m>76,877</m>, is canceled in the subtraction! 
+      </p>
+
+      <p>
+        To make it more generalized, you can imagine no matter what random <m>C</m> you picked for the antiderivative, it will be subtracted out! 
+        <md>
+          <mrow> \int_a^b f(x)\, dx \amp= \left(F(b) + C\right) - \left(F(a) + C\right) </mrow>
+          <mrow> \amp = F(b) + C - F(a) - C </mrow>
+          <mrow> \amp = F(b) - F(a) </mrow>
+        </md>
+        No wonder why we don't put the <m>+C</m> when dealing with definite integrals! 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>

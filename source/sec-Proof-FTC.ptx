@@ -85,6 +85,18 @@
       </p>
     </hint>
 
+    <solution>
+        <p>
+          The function we are taking the derivative of in the theorem is the accumulation function, <m>A</m>. 
+          Then we can set up the expression by applying the limit definition of derivatives to the function <m>A</m> as follows. 
+          <me>
+            A'(x) = \lim_{h\to 0} \frac{A(x + h) - A(x)}{h}
+          </me>
+          Recall that the fraction, without the limit symbol, represents the average rate of change of the area under the curve from <m>t = x</m> to <m>t = x + h</m>. 
+          By taking the limit of the average rate of change as the gap from <m>x</m> to <m>x + h</m> approaches 0, we obtain the instantaneous rate of change, aka the derivative. 
+        </p>
+      </solution>
+
   </exercises>
 
   <exercises>
@@ -196,6 +208,45 @@
       </p>
     </hint>
 
+    <solution>
+      <p>
+        Now let's focus on simplifying the average rate of change, 
+        <me>
+          \frac{A(x + h) - A(x)}{h}
+        </me>
+      </p>
+      <p>
+        By looking at the pretty figure, we observe that
+        <ul>
+          <li>
+            <p>
+              <m>A(x + h)</m> represents the total area of the green and orange region.  
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>A(x)</m> represents the area of the green region.  
+            </p>
+          </li>
+        </ul>
+        This implies that <m>A(x + h) - A(x)</m> should give us the area of the orange region. 
+        Remember that <m>h</m> is a super very really small number, so the orange region should be a super skinny strip whose area can approximated using a rectangle. 
+      </p>
+      
+      <p>
+        Recall the fancy left-endpoint and right-endpoint approximation we learned back in section 5.1? 
+        They seem like great methods to approximate the area of the skinny orange strip. 
+        The width of the orange strip is <m>h</m> and the height is either <m>f(x)</m> or <m>f(x + h)</m> depending on which method you picked. 
+        It turns out it doesn't matter which one you picked as the height since <m>h</m> is super very really small anyway. 
+        For demonstration, I will pick <m>f(x + h)</m> as the height of the orange strip. 
+        Then the average rate of change of the area is
+        <me>
+          \frac{A(x + h) - A(x)}{h} = \frac{h\cdot f(x + h)}{h} = f(x + h)
+        </me>
+        
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -222,7 +273,24 @@
       What!!?? Differentiation undo the integration indeed! 
     </p>
 
+    <solution>
+      <p>
+        Now that we figured out the average rate of change, the derivative is just the limit of the average rate of change we found in part (b) as <m>h</m> approaches 0. That is, 
+        <me>
+          A'(x) = \lim_{h\to 0} f(x + h) = f(x + 0) = f(x)
+        </me>
+        We proved it! 
+      </p>
+    </solution>
+
   </exercises>
+
+  <p>
+    Julie also proved the FTC in one of her lecture videos. Feel free to check it out if you are more of a visual person! 
+  </p>
+  <p>
+    Here is the video: <url href="https://media.pdx.edu/media/t/1_82n44iqx">https://media.pdx.edu/media/t/1_82n44iqx</url>
+  </p>
 
   <exercises>
     <title>When you complete the tasks... </title>
