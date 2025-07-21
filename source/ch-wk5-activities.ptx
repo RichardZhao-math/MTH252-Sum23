@@ -5,22 +5,61 @@
 
   <introduction>
     
-    <p>
-      The activities will be available on <alert> Monday, July 21</alert> and due on <alert>Sunday, July 27</alert>. 
-    </p>
-
-    <!--
     <p> 
       The activities for this week will ask you to think about integrals in a different way. 
+      Recall the two major ways you think about integrals so far are: 
+      <ul>
+        <li>
+          <p>
+            Some signed area under the curve, and
+          </p>
+        </li>
+        <li>
+          <p>
+            Some general antiderivative of the integrand, plug some numbers in, and do the subtraction. 
+          </p>
+        </li>
+      </ul>
+      Well it turns out that neither of them are the <alert>actual</alert> meaning of integrals. 
+      The area aspect is an <alert>graphical</alert> interpretation of integrals and the antiderivative is one <alert>method</alert> in evaluating integrals, guaranteed by the FTC. 
+    </p>
+    
+    <p>
+      There are three goals for the activities this week, and they are: 
+      <ol>
+        <li>
+          <p>
+            Investigate the actual meaning of integrals through the famous gorilla problem. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Analyze the meaning and the structure of integrals through the application and generalize it. 
+          </p>
+        </li>
+        <li>
+          <p>
+            Apply the actual meaning of integrals to another application commonly used in physics and engineering. 
+          </p>
+        </li>
+      </ol>
     </p>
 
     <p>
-      When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas. 
+      When you are ready to investigate the actual meaning of integrals, click the buttons below and work through the tasks following the prompts. 
+      You are more than welcome to work with your classmates collaboratively but you will need to write up your own work. 
+      When you completed all the tasks, format your work into a <alert>single pdf file</alert> and submit it in the corresponding assignment dropbox on Canvas.
     </p>
-    -->
+
   </introduction>
 
   <!-- include sections -->
-  
+  <xi:include href="sec-GorillaProblem.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Structure-Integrals.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Application-Work.ptx" />
 
 </chapter>

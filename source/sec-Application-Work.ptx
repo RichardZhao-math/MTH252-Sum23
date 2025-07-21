@@ -1,0 +1,99 @@
+<section xml:id="sec-Application-Work" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>A Physics and Engineering Application -- Work</title>
+  <introduction>
+    <p>
+      You may have heard of a measurement called <alert>work</alert> before, as it measures the transfer of energy by a force acting on an object as it is displaced. 
+      In a nutshell, the work (<m>W</m>) can be computed by multiplying the force (<m>F</m>) with the displacement (<m>d</m>) together, like this
+      <me>
+        W = F\, d
+      </me>
+      Notice that we can obtain the work if we know the (constant) force applied to an object and the displacement. 
+    </p>
+
+    <p>
+      But there is no guarantee that the force applied to an object remains constant for the entire duration of the displacement... 
+      So the above formula is really limited in the sense that we don't know exactly what the value of <m>F</m> is (since it varies). 
+      Thankfully we know calculus now and calculus will come to our rescue since calculus is a study that deals with changes! 
+    </p>
+
+    <p>
+      In this activity, your task is to explain <alert>why</alert> the calculus version of the work formula appears the way it is and apply it to an application. 
+    </p>
+
+    <p>
+      <alert>P.S.:</alert> You can find more information about the work done on an object in section 6.5 in our textbook. 
+      While this isn't a required section in this class, you will definitely encounter this type of application if you are a physics and/or an engineering major. 
+    </p>
+
+  </introduction>
+
+  <exercises>
+    <title>Part (a): Why does the formula look like this? </title>
+    
+    <statement>
+      <p>
+        In most calculus textbooks (including ours), work is being defined as
+        <definition xml:id="def-Work-Calculus">
+          <statement>
+            <p>
+              The work done by a variable force <m>F</m> moving an object along a line from <m>x = a</m> to <m>x = b</m> in the direction of the force is
+              <men xml:id="eqn-def-Work-Calculus">
+                W = \int_a^b F(x)\, dx
+              </men>
+            </p>
+          </statement>
+        </definition>
+      </p>
+
+      <p>
+        Ummm but why can we obtain the work by integrating the force... 
+        Explain why this formula makes sense to your friend as if they were just finished the algebra-based physics and didn't know as much calculus as you do. 
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+        It is very tempting to say that this is because the derivative of work is force. 
+        But this isn't convincing in the sense that more explanation is needed to justify why the derivative of work is force. 
+        Without much calculus background, this won't make sense (and it still doesn't make sense to Richard despite his excellency in math but knew practically nothing in Newtonian physics... He didn't have a great calc-based physics professor when he was a freshman in undergrad). 
+        But recall integrals is really about adding up pieces! 
+        Your friend did know about the concept of work and adding stuff together...
+      </p>
+    </hint>
+
+  </exercises>
+
+  <exercises>
+  <title>Part (b): Put the formula to use!</title>
+    <statement>
+      <p>
+        How much work is required to move an object from <m>x = 1</m> to <m>x = 3</m>, measured in meters, in the presence of a force, measured in Newtons, <m>N</m>, given by
+        <me>
+          F = \frac{2}{x^2}
+        </me>
+        acting along the <m>x</m>-axis? 
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+        We really have two formulas here to compute work: the short-and-easy <m>W = F\, d</m> and the slightly complicated calculus version. 
+        How do we know which one we should use here... 
+        Well a question that helps you decide is... Is the force in this scenario a constant? 
+      </p>
+    </hint>
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Format your work for this investigation, together with other two short investigations for this week, as a <alert>single pdf file</alert> and submit it in 
+      <url href="https://canvas.pdx.edu/courses/103253/assignments/1071236/">this assignment dropbox</url> 
+      on Canvas. 
+    </p>
+    <p>
+      Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts! 
+    </p>
+  </exercises>
+
+</section>

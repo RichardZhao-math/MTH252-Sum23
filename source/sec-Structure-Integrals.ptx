@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-Structure-Integrals" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Structure of Integrals</title>
+  <introduction>
+    <p>
+      In the Great Gorilla Jump problem, you saw that we can figure out the total distance traveled by adding up a bunch of pieces of distance together, and we obtained each little piece of the distance by multiplying the respective velocity and the elapsed time. 
+      This is exactly what an integral is, that we are adding a bunch of the pieces together obtained by multiplying something together. 
+      This idea is called "<alert>Adding-up-Pieces</alert>". 
+    </p>
+
+    <p>
+      In this activity, you will explain what each component in the Great Gorilla Jump problem represents and then generalize it to explore the structure of the definite integrals. 
+    </p>
+
+    <p>
+      <alert>P.S.:</alert> This idea may seem similar to the Riemann sum you learned back in section 5.2. 
+      This is perfectly correct! The Adding-up-Pieces idea is like a generalized version of the Riemann sum in the sense that we don't only apply this idea to just finding the area of a bunch of rectangles or the area under the curve. 
+    </p>
+
+  </introduction>
+
+  <exercises>
+  <title>Part (a): Math up the Great Gorilla Jump Problem!   </title>
+    <statement>
+      <p>
+        Let's call <m>\Delta t</m> the elapsed time (and it is typically 0.5 seconds) and <m>v(t_i)</m> the velocity of the gorilla at a certain point, where <m>i</m> is the index to indicate which piece we are referring to. 
+        If we call each piece of the distance <m>d_i</m>, then it can be obtained by 
+        <me>
+          d_i = v(t_i)\Delta t
+        </me>
+        You also found out that we can find the total distance by adding up the pieces together. 
+        By using the fancy sigma notation you learned before, the total distance traveled is 
+        <me>
+          d \approx \sum_{i = 1}^N d_i = \sum_{i = 1}^N v(t_i)\, \Delta t
+        </me>
+        where <m>N</m> denotes the number of pieces. 
+      </p>
+
+      <p>
+        We know that the approximation is better and better if we recorded more and more velocity as that will force the elapsed time to become smaller and smaller. 
+        Symbolically speaking, the total distance travel can be computed by
+        <me>
+          d = \lim_{N\to \infty} \sum_{i = 1}^N v(t_i)\, \Delta t
+        </me>
+      </p>
+
+      <p>
+        Now let's switch our attention to the definite integrals. Hypothetically speaking let's say we knew the velocity function, <m>y = v(t)</m>. 
+        Then by section 5.6, we know that the total distance traveled is
+        <me>
+          d = \int_0^5 v(t)\, dt
+        </me>
+        Note that there is no turnaround so the displacement and the distance traveled should be the same (if we are less picky about the sign). 
+      </p>
+
+      <p>
+        Wow that's a long preamble..., and here is your task! We have two expressions to represent the same thing (the total distance) so we can equate them. 
+        <me>
+          \int_0^5 v(t)\, dt = \lim_{N\to \infty} \sum_{i = 1}^N v(t_i)\, \Delta t
+        </me>
+        Explain what each part of the integral means using this equation. 
+        To be more explicit, what does the following symbols represent. Be as specifically as possible.  
+        <ul marker="">
+          <li>
+            <p>
+              <m>\displaystyle \int_0^5</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>v(t)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              <m>dt</m>
+            </p>
+          </li>
+        </ul>
+      </p>
+    </statement>
+
+  </exercises>
+
+  <exercises>
+  <title>Part (b): General Structure of Integrals</title>
+    <statement>
+      <p>
+        The general structure of integrals is like the one below (you can find a similar version in our textbook in section 5.2): 
+        <me>
+          \int_a^b f(x) \, dx = \lim_{N\to \infty} \sum_{i = 1}^N f(x_i) \, \Delta x
+        </me>
+        From the Great Gorilla Jump problem, we got the distance by (1) multiplying, and then (2) adding. 
+        By staring at the structure of a generic definite integral, <m>\int_a^b f(x)\, dt</m> ,what is it that are being multiplied and what is it that is being added? 
+        Which symbol (or the lack of symbol) represents the multiplication and which symbol represents the addition? 
+      </p>
+    </statement>
+    
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Now that you have a better understanding of the structure and the meaning of the definite integrals, we can make sense of other applications of integrals easier. 
+    </p>
+    <p>
+      Go to the 
+      <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Application-Work.html">next activity</url> 
+      and explore a famous application of integration in physics and engineering.  
+    </p>
+  </exercises>
+
+</section>

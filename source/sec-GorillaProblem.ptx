@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-GorillaProblem" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Great Gorilla Jump</title>
+  <introduction>
+    <p>
+      Imagine this: a gorilla, suited up with a parachute, climbs to the top of a tall city building as part of a special wildlife training experiment. 
+      After a brief moment of hesitation, the gorilla bravely leaps off the edge. 
+      As the parachute deploys and air resistance kicks in, you, as one of the researchers on the ground, begin recording data to study how the gorilla's velocity changes over time.
+      Using high-speed sensors, the team records the gorilla’s downward velocity every half-second as it falls. 
+      Note that the gorilla touched the ground just after 5 seconds. 
+      The recorded data is shown below.
+      <table>
+        <tabular halign="center" frame="all" rules="all">
+            <row header="yes" bottom="medium" >
+            <cell>Time (in seconds)</cell>
+            <cell>Velocity (in feet per second)</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>0</cell>
+            <cell>0</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>0.5</cell>
+            <cell>5</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>1.0</cell>
+            <cell>7</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>1.5</cell>
+            <cell>8</cell>
+            </row>
+
+            <row bottom="minor">
+            <cell>2.0</cell>
+            <cell>11</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>2.5</cell>
+            <cell>11.5</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>3.0</cell>
+            <cell>12</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>3.5</cell>
+            <cell>13</cell>
+            </row>
+
+            <row bottom="minor">
+            <cell>4.0</cell>
+            <cell>15.5</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>4.5</cell>
+            <cell>18</cell>
+            </row>
+            
+            <row bottom="minor">
+            <cell>5.0</cell>
+            <cell>19</cell>
+            </row>
+        </tabular>
+
+      </table>
+    </p>
+
+  </introduction>
+
+  <exercises>
+  <title>Part (a): How far did the gorilla travel? </title>
+    <statement>
+      <p>
+        Recall we can find the distance by <alert>multiplying</alert> the elapsed time and the velocity during the time. 
+        The formula is 
+        <me>
+            \text{distance} = \text{time}\times\text{velocity}
+        </me>
+        We are given a bunch of data points so let's find the total distance traveled as follows: 
+      </p>
+
+      <p>
+        (1) Approximate how far the gorilla fell during each half second interval and fill in the table below. 
+      </p>
+      <p>
+        <table>
+            <tabular halign="center" frame="all" rules="all">
+                <row header="yes" bottom="medium" >
+                <cell>Time (in seconds)</cell>
+                <cell>Approximate distance traveled (in feet)</cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>0 -- 0.5</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>0.5 -- 1.0</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>1.0 -- 1.5</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>1.5 -- 2.0</cell>
+                <cell></cell>
+                </row>
+
+                <row bottom="minor">
+                <cell>2.0 -- 2.5</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>2.5 -- 3.0</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>3.0 -- 3.5</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>3.5 -- 4.0</cell>
+                <cell></cell>
+                </row>
+
+                <row bottom="minor">
+                <cell>4.0 -- 4.5</cell>
+                <cell></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>4.5 -- 5.0</cell>
+                <cell></cell>
+                </row>
+                            
+            </tabular>
+
+        </table>
+      </p>
+
+      <p>
+        (2) Approximate the <alert>total</alert> distance the gorilla fell from the time he jumped off the building until the time he landed on the ground. 
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+        To figure out the distance, we need to know the elapsed time and the velocity during the time. 
+        The length of the elapsed time should be clear (hopefully). 
+        Yet the velocity isn't... 
+        Can we pick a (reasonable) velocity to <em>approximate</em> the distance? 
+      </p>
+      <p>
+        By saying approximating the distance, there is no one right answer. 
+      </p>
+    </hint>
+
+  </exercises>
+
+  <exercises>
+  <title>Part (b): How to make the approximation better?  </title>
+    <statement>
+      <p>
+        The assumption in part (a) here is that the distance traveled you computed is an approximation, not the <em>exact</em> distance traveled. 
+        There are two issues to address and your part (b) is to address these two issues: 
+        <ol marker="(1)">
+          <li>
+            <p>
+              Briefly describe <alert>why</alert> the result you got in part (a) is indeed an approximation. 
+              That is, how do you know the distance you got isn't the <em>exact</em> distance traveled. 
+            </p>
+          </li>
+          <li>
+            <p>
+              How can you make the approximation better? 
+              What changes could you make to the way you collect the data? 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+
+    <hint>
+      <p>
+        Think about the gravitational acceleration. Since the gorilla fell on the planet of earth, the acceleration remains a constant of 32 feet per second. 
+        What does it mean to the velocity? 
+        Does it make sense for the velocity to stay constant for 0.5 of a second? 
+      </p>
+    </hint>
+
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      You may be wondering how a gorilla falling is relevant to the integrals. 
+      A quick connection we can draw here is that the (indefinite) integral of velocity represents some sort of displacement. 
+      Since there is no turnaround in the motion, the distance traveled is the displacement (if you go easy on the sign). 
+      You will explore the connection in the next activity. 
+    </p>
+    <p>
+      Go to the 
+      <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Structure-Integrals.html">next activity</url> 
+      and explore the structure of integrals using this gorilla falling scenario! 
+    </p>
+  </exercises>
+
+</section>
