@@ -145,13 +145,58 @@ var ptx_lunr_docs = [
   "body": "    "
 },
 {
-  "id": "ch-wk5-activities",
+  "id": "sec-GorillaProblem",
   "level": "1",
-  "url": "ch-wk5-activities.html",
-  "type": "Chapter",
-  "number": "3",
-  "title": "Week 5 Activities",
-  "body": " Week 5 Activities   The activities will be available on Monday, July 21 and due on Sunday, July 27 .     "
+  "url": "sec-GorillaProblem.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "The Great Gorilla Jump",
+  "body": " The Great Gorilla Jump   Imagine this: a gorilla, suited up with a parachute, climbs to the top of a tall city building as part of a special wildlife training experiment. After a brief moment of hesitation, the gorilla bravely leaps off the edge. As the parachute deploys and air resistance kicks in, you, as one of the researchers on the ground, begin recording data to study how the gorilla's velocity changes over time. Using high-speed sensors, the team records the gorilla’s downward velocity every half-second as it falls. Note that the gorilla touched the ground just after 5 seconds. The recorded data is shown below.    Time (in seconds)  Velocity (in feet per second)    0  0    0.5  5    1.0  7    1.5  8    2.0  11    2.5  11.5    3.0  12    3.5  13    4.0  15.5    4.5  18    5.0  19        Part (a): How far did the gorilla travel?   Recall we can find the distance by multiplying the elapsed time and the velocity during the time. The formula is We are given a bunch of data points so let's find the total distance traveled as follows:  (1) Approximate how far the gorilla fell during each half second interval and fill in the table below.      Time (in seconds)  Approximate distance traveled (in feet)    0 -- 0.5     0.5 -- 1.0     1.0 -- 1.5     1.5 -- 2.0     2.0 -- 2.5     2.5 -- 3.0     3.0 -- 3.5     3.5 -- 4.0     4.0 -- 4.5     4.5 -- 5.0       (2) Approximate the total distance the gorilla fell from the time he jumped off the building until the time he landed on the ground.    To figure out the distance, we need to know the elapsed time and the velocity during the time. The length of the elapsed time should be clear (hopefully). Yet the velocity isn't... Can we pick a (reasonable) velocity to approximate the distance?  By saying approximating the distance, there is no one right answer.     Part (b): How to make the approximation better?   The assumption in part (a) here is that the distance traveled you computed is an approximation, not the exact distance traveled. There are two issues to address and your part (b) is to address these two issues:   Briefly describe why the result you got in part (a) is indeed an approximation. That is, how do you know the distance you got isn't the exact distance traveled.    How can you make the approximation better? What changes could you make to the way you collect the data?       Think about the gravitational acceleration. Since the gorilla fell on the planet of earth, the acceleration remains a constant of 32 feet per second. What does it mean to the velocity? Does it make sense for the velocity to stay constant for 0.5 of a second?     When you complete the tasks...  You may be wondering how a gorilla falling is relevant to the integrals. A quick connection we can draw here is that the (indefinite) integral of velocity represents some sort of displacement. Since there is no turnaround in the motion, the distance traveled is the displacement (if you go easy on the sign). You will explore the connection in the next activity.  Go to the next activity and explore the structure of integrals using this gorilla falling scenario!   "
+},
+{
+  "id": "sec-GorillaProblem-2-1-1",
+  "level": "2",
+  "url": "sec-GorillaProblem.html#sec-GorillaProblem-2-1-1",
+  "type": "Table",
+  "number": "3.1.1",
+  "title": "",
+  "body": "   Time (in seconds)  Velocity (in feet per second)    0  0    0.5  5    1.0  7    1.5  8    2.0  11    2.5  11.5    3.0  12    3.5  13    4.0  15.5    4.5  18    5.0  19    "
+},
+{
+  "id": "sec-GorillaProblem-3-2-3-1",
+  "level": "2",
+  "url": "sec-GorillaProblem.html#sec-GorillaProblem-3-2-3-1",
+  "type": "Table",
+  "number": "3.1.2",
+  "title": "",
+  "body": "   Time (in seconds)  Approximate distance traveled (in feet)    0 -- 0.5     0.5 -- 1.0     1.0 -- 1.5     1.5 -- 2.0     2.0 -- 2.5     2.5 -- 3.0     3.0 -- 3.5     3.5 -- 4.0     4.0 -- 4.5     4.5 -- 5.0     "
+},
+{
+  "id": "sec-Structure-Integrals",
+  "level": "1",
+  "url": "sec-Structure-Integrals.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "The Structure of Integrals",
+  "body": " The Structure of Integrals   In the Great Gorilla Jump problem, you saw that we can figure out the total distance traveled by adding up a bunch of pieces of distance together, and we obtained each little piece of the distance by multiplying the respective velocity and the elapsed time. This is exactly what an integral is, that we are adding a bunch of the pieces together obtained by multiplying something together. This idea is called \" Adding-up-Pieces \".  In this activity, you will explain what each component in the Great Gorilla Jump problem represents and then generalize it to explore the structure of the definite integrals.   P.S.: This idea may seem similar to the Riemann sum you learned back in section 5.2. This is perfectly correct! The Adding-up-Pieces idea is like a generalized version of the Riemann sum in the sense that we don't only apply this idea to just finding the area of a bunch of rectangles or the area under the curve.    Part (a): Math up the Great Gorilla Jump Problem!   Let's call the elapsed time (and it is typically 0.5 seconds) and the velocity of the gorilla at a certain point, where is the index to indicate which piece we are referring to. If we call each piece of the distance , then it can be obtained by You also found out that we can find the total distance by adding up the pieces together. By using the fancy sigma notation you learned before, the total distance traveled is where denotes the number of pieces.  We know that the approximation is better and better if we recorded more and more velocity as that will force the elapsed time to become smaller and smaller. Symbolically speaking, the total distance travel can be computed by   Now let's switch our attention to the definite integrals. Hypothetically speaking let's say we knew the velocity function, . Then by section 5.6, we know that the total distance traveled is Note that there is no turnaround so the displacement and the distance traveled should be the same (if we are less picky about the sign).  Wow that's a long preamble..., and here is your task! We have two expressions to represent the same thing (the total distance) so we can equate them. Explain what each part of the integral means using this equation. To be more explicit, what does the following symbols represent. Be as specifically as possible.                      Part (b): General Structure of Integrals   The general structure of integrals is like the one below (you can find a similar version in our textbook in section 5.2): From the Great Gorilla Jump problem, we got the distance by (1) multiplying, and then (2) adding. By staring at the structure of a generic definite integral, ,what is it that are being multiplied and what is it that is being added? Which symbol (or the lack of symbol) represents the multiplication and which symbol represents the addition?     When you complete the tasks...  Now that you have a better understanding of the structure and the meaning of the definite integrals, we can make sense of other applications of integrals easier.  Go to the next activity and explore a famous application of integration in physics and engineering.   "
+},
+{
+  "id": "sec-Application-Work",
+  "level": "1",
+  "url": "sec-Application-Work.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "A Physics and Engineering Application -- Work",
+  "body": " A Physics and Engineering Application -- Work   You may have heard of a measurement called work before, as it measures the transfer of energy by a force acting on an object as it is displaced. In a nutshell, the work ( ) can be computed by multiplying the force ( ) with the displacement ( ) together, like this Notice that we can obtain the work if we know the (constant) force applied to an object and the displacement.  But there is no guarantee that the force applied to an object remains constant for the entire duration of the displacement... So the above formula is really limited in the sense that we don't know exactly what the value of is (since it varies). Thankfully we know calculus now and calculus will come to our rescue since calculus is a study that deals with changes!  In this activity, your task is to explain why the calculus version of the work formula appears the way it is and apply it to an application.   P.S.: You can find more information about the work done on an object in section 6.5 in our textbook. While this isn't a required section in this class, you will definitely encounter this type of application if you are a physics and\/or an engineering major.    Part (a): Why does the formula look like this?   In most calculus textbooks (including ours), work is being defined as   The work done by a variable force moving an object along a line from to in the direction of the force is      Ummm but why can we obtain the work by integrating the force... Explain why this formula makes sense to your friend as if they were just finished the algebra-based physics and didn't know as much calculus as you do.    It is very tempting to say that this is because the derivative of work is force. But this isn't convincing in the sense that more explanation is needed to justify why the derivative of work is force. Without much calculus background, this won't make sense (and it still doesn't make sense to Richard despite his excellency in math but knew practically nothing in Newtonian physics... He didn't have a great calc-based physics professor when he was a freshman in undergrad). But recall integrals is really about adding up pieces! Your friend did know about the concept of work and adding stuff together...     Part (b): Put the formula to use!   How much work is required to move an object from to , measured in meters, in the presence of a force, measured in Newtons, , given by acting along the -axis?    We really have two formulas here to compute work: the short-and-easy and the slightly complicated calculus version. How do we know which one we should use here... Well a question that helps you decide is... Is the force in this scenario a constant?     When you complete the tasks...  Format your work for this investigation, together with other two short investigations for this week, as a single pdf file and submit it in this assignment dropbox on Canvas.  Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts!   "
+},
+{
+  "id": "def-Work-Calculus",
+  "level": "2",
+  "url": "sec-Application-Work.html#def-Work-Calculus",
+  "type": "Definition",
+  "number": "3.3.1",
+  "title": "",
+  "body": "  The work done by a variable force moving an object along a line from to in the direction of the force is    "
 },
 {
   "id": "ch-wk6-activities",

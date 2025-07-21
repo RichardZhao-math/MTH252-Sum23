@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<!--******************************************-->
+<!--*  Authored with PreTeXt                 *-->
+<!--*  pretextbook.org                       *-->
+<!--*  Theme: default-modern                 *-->
+<!--*  Palette:                              *-->
+<!--******************************************-->
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Structure of Integrals</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math"
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="MTH 252 Calculus II">
+<meta property="book:author" content="Richard Zhao">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><!--** eBookCongig is necessary to configure interactive       **-->
+<!--** Runestone components to run locally in reader's browser **-->
+<!--** No external communication:                              **-->
+<!--**     log level is 0, Runestone Services are disabled     **-->
+<script type="text/javascript">
+eBookConfig = {};
+eBookConfig.useRunestoneServices = false;
+eBookConfig.host = 'http://127.0.0.1:8000';
+eBookConfig.course = 'PTX_Course_Title_Here';
+eBookConfig.basecourse = 'PTX_Base_Course';
+eBookConfig.isLoggedIn = false;
+eBookConfig.email = '';
+eBookConfig.isInstructor = false;
+eBookConfig.logLevel = 0;
+eBookConfig.username = '';
+eBookConfig.readings = null;
+eBookConfig.activities = null;
+eBookConfig.downloadsEnabled = false;
+eBookConfig.allow_pairs = false;
+eBookConfig.enableScratchAC = false;
+eBookConfig.build_info = "";
+eBookConfig.python3 = null;
+eBookConfig.runestone_version = '7.9.1';
+eBookConfig.jobehost = '';
+eBookConfig.proxyuri_runs = '';
+eBookConfig.proxyuri_files = '';
+eBookConfig.enable_chatcodes =  false;
+</script>
+<!--*** Runestone Services ***-->
+<script src="_static/prefix-runtime.787a04695534ef1e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.014cb392a13bd045.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<link rel="stylesheet" type="text/css" href="_static/prefix-runestone.8141ae22fd347e48.css">
+<script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script>
+</head>
+<body id="changeme" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner"><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">MTH 252 Calculus II</span> <span class="subtitle">Summer 2025</span></a></h1>
+<p class="byline">Richard Zhao</p>
+</div></div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><div class="ptx-navbar-contents">
+<button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"><button id="light-dark-button" class="light-dark-button button" title="Dark Mode"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe51c;</span><span class="name">Dark Mode</span></button></span><span class="treebuttons"><a class="previous-button button" href="sec-GorillaProblem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-wk5-activities.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-Application-Work.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span>
+</div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N} \newcommand{\Z}{\mathbb Z} \newcommand{\Q}{\mathbb Q} \newcommand{\R}{\mathbb R}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2 focused" data-preexpanded-levels="0" data-max-levels="2"><ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-frontmatter"><div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-wk2-activities.html" class="internal"><span class="codenumber">1</span> <span class="title">Week 2 Activities</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Accumulation-Function.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Accumulation Function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-3" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (a): An example</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-4" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (b): Meaning of the function</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-5" class="internal"><span class="codenumber">1.1</span> <span class="title">Part (c): Structure of the formula</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Accumulation-Function.html#sec-Accumulation-Function-6" class="internal"><span class="codenumber">1.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-wk3-activities.html" class="internal"><span class="codenumber">2</span> <span class="title">Week 3 Activities</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Proof-FTC.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Justifying THE Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-3" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (a): Starting Point - Set up the Expression</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-4" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (b): Average Rate of Change of the Area</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-5" class="internal"><span class="codenumber">2.1</span> <span class="title">Part (c): Instantaneous Rate of Change of the Area</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC.html#sec-Proof-FTC-8" class="internal"><span class="codenumber">2.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Proof-FTC-Corollary.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Justifying An Corollary of the Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC-Corollary.html#sec-Proof-FTC-Corollary-3" class="internal"><span class="codenumber">2.2</span> <span class="title">Part (a): How "different" are all the antiderivatives of a function?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC-Corollary.html#sec-Proof-FTC-Corollary-4" class="internal"><span class="codenumber">2.2</span> <span class="title">Part (b): Prove the Corollary of the FTC</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC-Corollary.html#sec-Proof-FTC-Corollary-5" class="internal"><span class="codenumber">2.2</span> <span class="title">Part (c): Why doesn’t the <span class="process-math">\(\boldsymbol{+C}\)</span> matter in definite integrals?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Proof-FTC-Corollary.html#sec-Proof-FTC-Corollary-6" class="internal"><span class="codenumber">2.2</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-wk5-activities.html" class="internal"><span class="codenumber">3</span> <span class="title">Week 5 Activities</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-GorillaProblem.html" class="internal"><span class="codenumber">3.1</span> <span class="title">The Great Gorilla Jump</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GorillaProblem.html#sec-GorillaProblem-3" class="internal"><span class="codenumber">3.1</span> <span class="title">Part (a): How far did the gorilla travel?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GorillaProblem.html#sec-GorillaProblem-4" class="internal"><span class="codenumber">3.1</span> <span class="title">Part (b): How to make the approximation better?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-GorillaProblem.html#sec-GorillaProblem-5" class="internal"><span class="codenumber">3.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section contains-active">
+<div class="toc-title-box"><a href="sec-Structure-Integrals.html" class="internal"><span class="codenumber">3.2</span> <span class="title">The Structure of Integrals</span></a></div>
+<ul class="structural toc-item-list active">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Structure-Integrals.html#sec-Structure-Integrals-3" class="internal"><span class="codenumber">3.2</span> <span class="title">Part (a): Math up the Great Gorilla Jump Problem!</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Structure-Integrals.html#sec-Structure-Integrals-4" class="internal"><span class="codenumber">3.2</span> <span class="title">Part (b): General Structure of Integrals</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Structure-Integrals.html#sec-Structure-Integrals-5" class="internal"><span class="codenumber">3.2</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-Application-Work.html" class="internal"><span class="codenumber">3.3</span> <span class="title">A Physics and Engineering Application -- Work</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Application-Work.html#sec-Application-Work-3" class="internal"><span class="codenumber">3.3</span> <span class="title">Part (a): Why does the formula look like this?</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Application-Work.html#sec-Application-Work-4" class="internal"><span class="codenumber">3.3</span> <span class="title">Part (b): Put the formula to use!</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Application-Work.html#sec-Application-Work-5" class="internal"><span class="codenumber">3.3</span> <span class="title">When you complete the tasks...</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-wk6-activities.html" class="internal"><span class="codenumber">4</span> <span class="title">Week 6 Activities</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-wk8-activities.html" class="internal"><span class="codenumber">5</span> <span class="title">Week 8 Activities</span></a></div></li>
+<li class="toc-item toc-chapter"><div class="toc-title-box"><a href="ch-wk9-activities.html" class="internal"><span class="codenumber">6</span> <span class="title">Week 9 Activities</span></a></div></li>
+<li class="toc-item toc-backmatter"><div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-Structure-Integrals"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.2</span><span class="space"> </span><span class="title">The Structure of Integrals</span>
+</h2>
+<section class="introduction" id="sec-Structure-Integrals-2"><div class="para" id="sec-Structure-Integrals-2-1">In the Great Gorilla Jump problem, you saw that we can figure out the total distance traveled by adding up a bunch of pieces of distance together, and we obtained each little piece of the distance by multiplying the respective velocity and the elapsed time. This is exactly what an integral is, that we are adding a bunch of the pieces together obtained by multiplying something together. This idea is called "<em class="alert">Adding-up-Pieces</em>".<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Structure-Integrals-2-2">In this activity, you will explain what each component in the Great Gorilla Jump problem represents and then generalize it to explore the structure of the definite integrals.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Structure-Integrals-2-3">
+<em class="alert">P.S.:</em> This idea may seem similar to the Riemann sum you learned back in section 5.2. This is perfectly correct! The Adding-up-Pieces idea is like a generalized version of the Riemann sum in the sense that we don’t only apply this idea to just finding the area of a bunch of rectangles or the area under the curve.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div></section><section class="exercises" id="sec-Structure-Integrals-3"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (a): Math up the Great Gorilla Jump Problem!</span>
+</h3>
+<div class="para logical" id="sec-Structure-Integrals-3-2-1">
+<div class="para">Let’s call <span class="process-math">\(\Delta t\)</span> the elapsed time (and it is typically 0.5 seconds) and <span class="process-math">\(v(t_i)\)</span> the velocity of the gorilla at a certain point, where <span class="process-math">\(i\)</span> is the index to indicate which piece we are referring to. If we call each piece of the distance <span class="process-math">\(d_i\text{,}\)</span> then it can be obtained by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d_i = v(t_i)\Delta t
+\end{equation*}
+</div>
+<div class="para">You also found out that we can find the total distance by adding up the pieces together. By using the fancy sigma notation you learned before, the total distance traveled is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d \approx \sum_{i = 1}^N d_i = \sum_{i = 1}^N v(t_i)\, \Delta t
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(N\)</span> denotes the number of pieces.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-Structure-Integrals-3-2-2">
+<div class="para">We know that the approximation is better and better if we recorded more and more velocity as that will force the elapsed time to become smaller and smaller. Symbolically speaking, the total distance travel can be computed by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = \lim_{N\to \infty} \sum_{i = 1}^N v(t_i)\, \Delta t
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-Structure-Integrals-3-2-3">
+<div class="para">Now let’s switch our attention to the definite integrals. Hypothetically speaking let’s say we knew the velocity function, <span class="process-math">\(y = v(t)\text{.}\)</span> Then by section 5.6, we know that the total distance traveled is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+d = \int_0^5 v(t)\, dt
+\end{equation*}
+</div>
+<div class="para">Note that there is no turnaround so the displacement and the distance traveled should be the same (if we are less picky about the sign).</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="sec-Structure-Integrals-3-2-4">
+<div class="para">Wow that’s a long preamble..., and here is your task! We have two expressions to represent the same thing (the total distance) so we can equate them.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_0^5 v(t)\, dt = \lim_{N\to \infty} \sum_{i = 1}^N v(t_i)\, \Delta t
+\end{equation*}
+</div>
+<div class="para">Explain what each part of the integral means using this equation. To be more explicit, what does the following symbols represent. Be as specifically as possible.</div>
+<ul class="no-marker" id="sec-Structure-Integrals-3-2-4-2">
+<li id="sec-Structure-Integrals-3-2-4-2-1">
+<div class="para" id="sec-Structure-Integrals-3-2-4-2-1-1">
+<span class="process-math">\(\displaystyle \displaystyle \int_0^5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-4-2-1-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Structure-Integrals-3-2-4-2-1" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Structure-Integrals-3-2-4-2-2">
+<div class="para" id="sec-Structure-Integrals-3-2-4-2-2-1">
+<span class="process-math">\(\displaystyle v(t)\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-4-2-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Structure-Integrals-3-2-4-2-2" title="Copy permalink for Item">🔗</a></div>
+</li>
+<li id="sec-Structure-Integrals-3-2-4-2-3">
+<div class="para" id="sec-Structure-Integrals-3-2-4-2-3-1">
+<span class="process-math">\(\displaystyle dt\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-4-2-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-Structure-Integrals-3-2-4-2-3" title="Copy permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-3-2-4" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 3.2: Part (a): Math up the Great Gorilla Jump Problem!"><a href="#sec-Structure-Integrals-3" title="Copy permalink for Exercises 3.2: Part (a): Math up the Great Gorilla Jump Problem!">🔗</a></div></section><section class="exercises" id="sec-Structure-Integrals-4"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (b): General Structure of Integrals</span>
+</h3>
+<div class="para logical" id="sec-Structure-Integrals-4-2-1">
+<div class="para">The general structure of integrals is like the one below (you can find a similar version in our textbook in section 5.2):</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_a^b f(x) \, dx = \lim_{N\to \infty} \sum_{i = 1}^N f(x_i) \, \Delta x
+\end{equation*}
+</div>
+<div class="para">From the Great Gorilla Jump problem, we got the distance by (1) multiplying, and then (2) adding. By staring at the structure of a generic definite integral, <span class="process-math">\(\int_a^b f(x)\, dt\)</span> ,what is it that are being multiplied and what is it that is being added? Which symbol (or the lack of symbol) represents the multiplication and which symbol represents the addition?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-4-2-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 3.2: Part (b): General Structure of Integrals"><a href="#sec-Structure-Integrals-4" title="Copy permalink for Exercises 3.2: Part (b): General Structure of Integrals">🔗</a></div></section><section class="exercises" id="sec-Structure-Integrals-5"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">When you complete the tasks...</span>
+</h3>
+<div class="para" id="sec-Structure-Integrals-5-2">Now that you have a better understanding of the structure and the meaning of the definite integrals, we can make sense of other applications of integrals easier.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-5-2" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-Structure-Integrals-5-3">Go to the <a class="external" href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Application-Work.html" target="_blank">next activity</a><details class="ptx-footnote" aria-live="polite" id="sec-Structure-Integrals-5-3-2"><summary class="ptx-footnote__number" title="Footnote 3.2.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-Structure-Integrals-5-3-2"><code class="code-inline tex2jax_ignore">richardzhao-math.github.io/MTH252-Sum23/sec-Application-Work.html</code></div></details> and explore a famous application of integration in physics and engineering.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Structure-Integrals-5-3" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercises 3.2: When you complete the tasks..."><a href="#sec-Structure-Integrals-5" title="Copy permalink for Exercises 3.2: When you complete the tasks...">🔗</a></div></section><div class="autopermalink" data-description="Section 3.2: The Structure of Integrals"><a href="#sec-Structure-Integrals" title="Copy permalink for Section 3.2: The Structure of Integrals">🔗</a></div></section></div>
+<div id="ptx-content-footer" class="ptx-content-footer">
+<a class="previous-button button" href="sec-GorillaProblem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-Application-Work.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" height="100%" viewBox="338 3000 8772 6866" role="img"><title>PreTeXt logo</title><g style="stroke-width:.025in; stroke:currentColor; fill:none"><polyline points="472,3590 472,9732 " style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png" alt="Runstone Academy logo"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png" alt="MathJax logo"></a>
+</div>
+</body>
+</html>
