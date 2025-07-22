@@ -21,11 +21,12 @@
         </li>
       </ul>
       Well it turns out that neither of them are the <alert>actual</alert> meaning of integrals. 
-      The area aspect is an <alert>graphical</alert> interpretation of integrals and the antiderivative is one <alert>method</alert> in evaluating integrals, guaranteed by the FTC. 
+      The area aspect is a <alert>graphical</alert> interpretation of integrals and the antiderivative is just one <alert>method</alert> to evaluate integrals, guaranteed by the FTC. 
+      These two approaches are limited when applying integrals to real-world problems since (1) we don't always have a graph to work with, and (2) not all functions will have a nice antiderivatives we can work with. 
     </p>
     
     <p>
-      There are three goals for the activities this week, and they are: 
+      There are three goals for the activities this week: 
       <ol>
         <li>
           <p>

@@ -13,7 +13,7 @@
     <p>
       But there is no guarantee that the force applied to an object remains constant for the entire duration of the displacement... 
       So the above formula is really limited in the sense that we don't know exactly what the value of <m>F</m> is (since it varies). 
-      Thankfully we know calculus now and calculus will come to our rescue since calculus is a study that deals with changes! 
+      Thankfully we know calculus now and calculus will come to our rescue (calculus is a study that deals with changes)! 
     </p>
 
     <p>
@@ -47,7 +47,7 @@
 
       <p>
         Ummm but why can we obtain the work by integrating the force... 
-        Explain why this formula makes sense to your friend as if they were just finished the algebra-based physics and didn't know as much calculus as you do. 
+        Explain why this formula makes sense to your friends as if they just finished the algebra-based physics and didn't know as much calculus as you do. 
       </p>
     </statement>
 
@@ -56,8 +56,11 @@
         It is very tempting to say that this is because the derivative of work is force. 
         But this isn't convincing in the sense that more explanation is needed to justify why the derivative of work is force. 
         Without much calculus background, this won't make sense (and it still doesn't make sense to Richard despite his excellency in math but knew practically nothing in Newtonian physics... He didn't have a great calc-based physics professor when he was a freshman in undergrad). 
-        But recall integrals is really about adding up pieces! 
-        Your friend did know about the concept of work and adding stuff together...
+      </p> 
+      
+      <p>
+        But recall integrals is really about adding up pieces together obtained by multiplication! 
+        Your friends did know about the concept of work and adding stuff together! 
       </p>
     </hint>
 
@@ -77,9 +80,9 @@
 
     <hint>
       <p>
-        We really have two formulas here to compute work: the short-and-easy <m>W = F\, d</m> and the slightly complicated calculus version. 
+        We really have two formulas here to calculate work: the short-and-easy <m>W = F\, d</m> and the slightly complicated calculus version. 
         How do we know which one we should use here... 
-        Well a question that helps you decide is... Is the force in this scenario a constant? 
+        Well a question that helps you decide is... Is the force in this scenario a constant during the entire displacement? 
       </p>
     </hint>
   </exercises>

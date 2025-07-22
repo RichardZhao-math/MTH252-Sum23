@@ -91,7 +91,7 @@
       </p>
 
       <p>
-        (1) Approximate how far the gorilla fell during each half second interval and fill in the table below. 
+        (1) Approximate how far the gorilla fell during each half-second interval and fill in the table below. 
       </p>
       <p>
         <table>
@@ -169,7 +169,8 @@
         Can we pick a (reasonable) velocity to <em>approximate</em> the distance? 
       </p>
       <p>
-        By saying approximating the distance, there is no one right answer. 
+        By saying approximating the distance, there is no one right answer.
+        Just make sure your approximation is reasonable. 
       </p>
     </hint>
 
@@ -185,13 +186,13 @@
           <li>
             <p>
               Briefly describe <alert>why</alert> the result you got in part (a) is indeed an approximation. 
-              That is, how do you know the distance you got isn't the <em>exact</em> distance traveled. 
+              That is, how do you know the answer you got isn't the <em>exact</em> distance traveled. 
             </p>
           </li>
           <li>
             <p>
               How can you make the approximation better? 
-              What changes could you make to the way you collect the data? 
+              What changes could you make to the way you collect the data to make the approximation better? 
             </p>
           </li>
         </ol>
