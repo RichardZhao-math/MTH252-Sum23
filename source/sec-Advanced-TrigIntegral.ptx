@@ -1,0 +1,136 @@
+<section xml:id="sec-Advanced-TrigIntegral" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Advanced Trigonometric Integral</title>
+
+  <introduction>
+    <p>
+        There are a lot of advanced and fancy methods to evaluate trigonometric integrals. 
+        For this activity, you will explore a particular advanced method to evaluate the integral of higher power of <m>\sin(x)</m> (or <m>\cos(x)</m>). 
+        That is, we want to evaluate integrals like 
+        <me>
+            \int\sin^m(x)\, dx 
+            \qquad\text{ and }\qquad 
+            \int\cos^n(x)\, dx
+        </me>
+        where <m>m</m> and <m>n</m> are larger numbers (without having another trigonometric function that allows you to <m>u</m>-sub it). 
+    </p>
+
+    <p>
+        By saying an "advanced" method, I don't mean the math concept is advanced, but more like the algebraic work is a bit complicated (so the steps are a bit longer). 
+        In fact, I will (eventually) just give you the formula and let you use it (the proof of the formula is in your textbook). 
+    </p>
+
+    <p>
+        For demonstration purposes, we will only focus on integrating the powers of <m>\sin(x)</m> in the following tasks. 
+        Remember that the method in integrating the powers of <m>\cos(x)</m> is (highly) similar! 
+    </p>
+
+  </introduction>
+
+  <exercises>
+    <title>Part (a): Base case: when the power is 2 and 3</title>
+    
+    <p>
+        The base case consists of the following two integrals: 
+        <me>
+            \int\sin^2(x)\, dx 
+            \qquad\text{ and }\qquad
+            \int\sin^3(x)\, dx
+        </me>
+        Your job is to evaluate these two integrals.
+        Again, show your work! 
+    </p>
+
+    <hint>
+        <title>to help you get started in the second integral... </title>
+        <p>
+            The second integral is actually the easier one since we can use the same method to evaluate this integral from the last activity!
+        </p>
+        
+        <p>
+            <alert>(Observe that the power on <m>\boldsymbol{\sin(x)}</m> is odd!)</alert>
+        </p>
+
+        <p>
+            So a good first step is to convert as many of the <m>\sin(x)</m>'s to <m>\cos(x)</m>'s, following the method used in part (a) of the previous activity... 
+        </p>
+
+        <hint>
+            <title>to check your setup...</title>
+            <p>
+                The correct setup should be something like
+                <me>
+                    \int\sin^3(x)\, dx = \int\sin(x)\left(1 - \cos^2(x)\right)\, dx
+                </me>
+            </p>
+        </hint>
+
+    </hint>
+
+    <hint>
+        <title>to help you get started in the first integral...</title>
+        <p>
+           The first integral is actually a harder one (well it depends on if you are familiar with a specific formula in MTH 112Z...). 
+           Observe that the square is what prevented us from applying any of the basic trigonometric integral formulas. 
+           Then is there a way to get rid of the square?  
+        </p>
+
+        <p>
+            <alert>Yes there is!</alert> Recall we learned some special formulas in MTH 112Z called the <alert>power reducing formula</alert>. 
+            The one we want to use here is the power reducing formula for sine, as follows: 
+            <me>
+                \sin^2(x) = \frac{1}{2}\left(1 - \cos(2x)\right)
+            </me>
+            See that there is no more square on your trigonometric function!
+        </p>
+    
+    </hint>
+    
+  </exercises>
+
+  <exercises>
+    <title>Part (b): Reduction Formulas for larger powers</title>
+    
+    <p>
+        The first integral in part (a) demonstrates the essence of integrating trigonometric functions with larger powers, that we want to <alert>reduce the power</alert> to a number small enough that we can just use one of the existing formulas (like power of 1, 2, and 3 of <m>\sin(x)</m>). 
+    </p>
+
+    <p>
+        But how do we reduce the power? There is a reduction formula for sine that we can use directly and I included it below: 
+        <men xml:id="eqn-reduction-sine">
+            \int \sin^m(x)\, dx = -\frac{\sin^{m-1}(x)\cos(x)}{m} + \frac{m - 1}{m}\int \sin^{m-2}(x)\, dx
+        </men>
+        If you are comparing the two integrals in the above formula, we can reduce the power of <m>\sin(x)</m> in the integrand by 2 each time we apply this formula. 
+    </p>
+
+    <p>
+        If you are wondering how we obtain this formula, the proof is included in section 7.1 in your textbook (I used to have my students prove the cosine version by mimicking the process but this would make this weekly investigation assignment way too long...). 
+        To get the best out of this formula, I want to make sure you know <alert>how</alert> to use it. 
+    </p>
+
+    <p>
+        Your job in this part is to evaluate the following integral
+        <me>
+            \int\sin^4(x)\, dx
+        </me>
+        using this reduction formula above. 
+    </p>
+    
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Clap for yourself and celebrate that you knew the major strategies to evaluate trigonometric integrals! 
+      This will help you evaluate integrals using the method of trigonometric substitution! 
+    </p>
+    <p>
+      Then format your work for the investigations for this week, as a <alert>single pdf file</alert> and submit it in 
+      <url href="https://canvas.pdx.edu/courses/103253/assignments/1071237/">this assignment dropbox</url> 
+      on Canvas. 
+    </p>
+    <p>
+      Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts! 
+    </p>
+  </exercises>
+
+</section>

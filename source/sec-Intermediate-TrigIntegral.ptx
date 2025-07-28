@@ -1,0 +1,146 @@
+<section xml:id="sec-Intermediate-TrigIntegral" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Intermediate Trigonometric Integral</title>
+
+  <introduction>
+    <p>
+        Now that we know the integral formulas of all the six trigonometric functions. 
+        Let's take things up a notch! 
+        What if there are two trigonometric functions in the integrand? 
+    </p>
+
+    <p>
+        Back in MTH 112Z in which you learned a lot of the fun trigonometric identities, remember we can turn all the trigonometric functions in some combinations of <m>\sin(x)</m> and <m>\cos(x)</m>. 
+        Because of this, we will focus our investigation to some combinations of <m>\sin(x)</m> and <m>\cos(x)</m>. 
+        If you ever need to deal with other trigonometric integrals, then converting everything to some combinations of <m>\sin(x)</m> and <m>\cos(x)</m> is always a strategy to consider. 
+    </p>
+
+    <p>
+        The goal of the following tasks is to develop a strategy to deal with integrals in the form of 
+        <me>
+            \int \sin^m(x)\cos^n(x)\, dx
+        </me>
+        where <m>m</m> and <m>n</m> are some integer powers. It turns out that the <alert>parity</alert> of <m>m</m> and <m>n</m> will help us in determining the strategy to use. 
+    </p>
+
+    <p>
+        <alert>P.S.:</alert> This is essentially what a third of section 7.2 is about. 
+        To have you explore the various strategies, your job is to take the following specific integrals while summarizing the patterns (but you don't need to include the patterns in your writeup. This will be too much). 
+        Richard will give out the strategies after the due date (so he won't take the fun of discovering some fancy math away from you). 
+        Make sure to check this page again after the due date! 
+    </p>
+  </introduction>
+
+  <exercises>
+    <title>Part (a): If <m>\boldsymbol{m}</m> is an odd number...</title>
+    
+    <statement>
+        <p>
+            The first case we are looking at here is when the power on <m>\sin(x)</m> is an odd number. 
+            To have you explore the strategy using a specific example, your job here is to evaluate the following integral
+            <me>
+                \int \sin^3(x)\cos^2(x)\, dx
+            </me>
+        </p>
+
+        <p>
+            Remember to show your work! 
+        </p>
+    </statement>
+
+    <hint>
+        <title>to help you get started...</title>
+        <p>
+            It is kind of annoying to deal with two <em>different</em> trigonometric functions. 
+            The goal here is to convert them into one function (so either trying to convert as many as the <m>\sin(x)</m>'s to <m>\cos(x)</m>'s or vice versa so we only need to deal with one single trigonometric function). 
+        </p>
+
+        <p>
+            The identity that may come in handy is the Pythagorean Identity, as follows: 
+            <me>
+                \sin^2(x) + \cos^2(x) = 1
+            </me>
+        </p>
+
+        <p>
+            Well but that brings up another question: Do we convert the <m>\sin(x)</m>'s to <m>\cos(x)</m>'s or the other way around... 
+        </p>
+
+        <hint>
+            <title>to help you pick in which way of the conversion will help...</title>
+            <p>
+                It turns out that both ways will work, but one way will be easier than the other one ...
+                Let's follow the easier route to convert as many of the <m>\sin(x)</m>'s to <m>\cos(x)</m>'s as possible. 
+                That is, we want less than 3 copies of <m>\sin(x)</m>'s in the integrand. 
+            </p>
+        </hint>
+            
+    </hint>
+
+    <hint>
+        <title>to check your setup... </title>
+        <p>
+            Since we want to convert as many of the <m>\sin(x)</m>'s to <m>\cos(x)</m>'s, we can use the Pythagorean identity to obtain the following integrals
+            <me>
+                \int \sin(x)\left(\cos^2(x) - \cos^4(x)\right)\, dx
+            </me>
+        </p>
+
+        <p>
+            <alert>P.S.:</alert> Just because Richard is nice to give you a step for you to check your work, it doesn't mean you get to start here. 
+            Show your work. How does it go from the original integral to this one? 
+        </p>
+
+        <hint>
+            <title>if you need help to go further...</title>
+            <p>
+                You actually can evaluate this integral using <m>u</m>-sub. 
+                Try using <m>u = \cos(x)</m> and see how easy the integral will become!
+            </p>
+        
+        </hint>
+        
+    </hint>
+
+  </exercises>
+
+  <exercises>
+    <title>Part (b): If <m>\boldsymbol{n}</m> is an odd number... </title> 
+    
+    <statement>
+
+        <p>
+            The second case is when the power on <m>\cos(x)</m> is an odd number. 
+            It turns out that the procedure is (highly?) similar to the one in part (a) but you will need to make some adjustments since <m>\cos(x)</m> is the one with the odd power now. 
+        </p>
+
+        <p>
+            Your job here is to evaluate the following integral 
+            <me>
+                \int \sin^2(x)\cos^5(x)\, dx
+            </me>
+            by <alert>mimicking</alert> what you did in part (a). Again, remember to show your work! 
+        </p>
+
+        <p>
+            Richard will not give out formal hints here since the hints will be highly similar to the ones above. 
+            If you get stuck or want to confirm your work, email your questions/work to Richard and he can help you out. 
+        </p>
+
+    </statement>
+    
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Try to see if you can summarize the pattern out of it (for example, why do we split up the cases based on which one, <m>\sin(x)</m> or <m>\cos(x)</m> has the odd power). 
+      Remember you don't need to include the pattern you summarize in the writeup and check back here after the due date to see the formal explanation. 
+    </p>
+    <p>
+      Then go to the 
+      <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Advanced-TrigIntegral.html">next activity</url> 
+      to explore an advanced trigonometric integrals about dealing with higher powers trigonometric functions in an integral. 
+    </p>
+  </exercises>
+
+</section>

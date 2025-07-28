@@ -1,0 +1,129 @@
+<section xml:id="sec-Basic-TrigIntegral" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Basic Trigonometric Integral</title>
+  
+  <introduction>
+    <p>
+        Well in order to evaluate some trigonometric integrals, we need some basic integral formulas we can use. 
+        We learned some integral formulas in Chapter 5 involving trigonometric functions. 
+        I included them below. 
+    </p>
+
+    <theorem xml:id="thm-Basic-TrigIntegrals">
+        <title>Basic Trigonometric Integrals</title>
+
+        <statement>
+            <p>
+                <md>
+                    <mrow>\int \sin(x)\, dx = -\cos(x) + C \qquad \amp \qquad \int \cos(x)\, dx = \sin(x) + C </mrow>
+                    <mrow>\int \sec^2(x)\, dx = \tan(x) + C \qquad \amp \qquad \int \csc^2(x)\, dx = -\cot(x) + C </mrow>
+                    <mrow>\int \sec(x)\tan(x)\, dx = \sec(x) + C \qquad \amp \qquad \int \csc(x)\cot(x)\, dx = -\csc(x) + C </mrow>
+                </md>
+            </p>
+        </statement>
+    </theorem>
+
+    <p>
+        Remember we got this batch of formulas from calc 1. 
+        We learned about the derivatives of the six trigonometric functions and we basically just rewrite those derivative formulas using integrals. 
+    </p>
+
+    <p>
+        But we actually don't know about the integral formulas of all the six trigonometric functions yet... 
+        The goal of this activity is to derive the integral formula of tangent, cotangent, secant, and cosecant. 
+    </p>
+
+    <p>
+        <alert>P.S.:</alert> To help you stay on track, I will give you the method you should use and also the answer. 
+        <em>Your job is to evaluate the integral and obtain the answer in the exact format</em>.
+        Don't forget to show all your work to convince Richard that you know where the formulas come from. 
+    </p>
+    
+  </introduction>
+
+  <exercises>
+    <title>Part (a): Integral of (Co)Tangent</title>
+
+    <statement>
+        <p>
+            Let's start by figuring out what the integral of tangent and cotangent are! 
+        </p>
+
+        <p>
+            Your job is to evaluate <m>\displaystyle \int \tan(x)\, dx</m> and <m>\displaystyle \int \cot(x)\, dx</m>. 
+        </p>
+    </statement>
+
+    <hint>
+        <title>to help you get started... </title>
+        <p>
+            Since we knew nothing about the integral of tangent and cotangent, a good strategy is to convert them to sine and cosine, because we do know about the integrals (and also derivatives) of sine and cosine. 
+            The following identities should be helpful to get you started: 
+            <me>
+                \tan(x) = \frac{\sin(x)}{\cos(x)} \quad\text{and}\quad \cot(x) = \frac{\cos(x)}{\sin(x)}
+            </me>
+            The method you should be thinking about using here is <m>u</m>-sub... (so pick your <m>u</m> wisely). 
+        </p>
+    </hint>
+
+    <hint>
+        <title>to check your answers...</title>
+        <p>
+            If your math is right, then you should arrive the following answers: 
+            <md>
+                <mrow>\int \tan(x)\, dx \amp= \ln\left|\sec(x)\right| + C </mrow>
+                <mrow>\int \cot(x)\, dx \amp= \ln\left|\sin(x)\right| + C \amp </mrow>
+            </md>
+        </p>
+    </hint>
+    
+  </exercises>
+
+  <exercises>
+    <title>Part (b): Integral of (Co)Secant</title>
+    <p>
+        Next, we will tackle the integral of secant and cosecant!
+    </p>
+
+    <p>
+        Your job is to evaluate <m>\displaystyle \int \sec(x)\, dx</m> and <m>\displaystyle \int \csc(x)\, dx</m>. 
+    </p>
+
+    <hint>
+        <title>to help you get started...</title>
+        <p>
+            These two integrals are bit tricky since the previous strategy won't work well in the sense that we don't get both the <m>\sin(x)</m> and <m>\cos(x)</m> in a single integral. 
+            So we will need a tricky manipulation to turn <m>\sec(x)</m> and <m>\csc(x)</m> into a slightly complicated fractions to work with, and they are
+            <md>
+                <mrow> \sec(x) \amp= \frac{\sec(x)\big(\sec(x) + \tan(x)\big)}{\sec(x) + \tan(x)} </mrow>
+                <mrow> \csc(x) \amp= \frac{\csc(x)\big(\csc(x) + \cot(x)\big)}{\csc(x) + \cot(x)}</mrow>
+            </md>
+            The method you should be thinking about using here is also <m>u</m>-sub (in a similar fashion to Part (a)). 
+        </p>
+    </hint>
+
+    <hint>
+        <title>to check your answers...</title>
+        <p>
+            If your math is right, then you should arrive the following answers: 
+            <md>
+                <mrow>\int \sec(x)\, dx \amp= \ln\left|\sec(x) + \tan(x)\right| + C </mrow>
+                <mrow>\int \csc(x)\, dx \amp= \ln\left|\csc(x) - \cot(x)\right| + C </mrow>
+            </md>
+        </p>
+    </hint>
+
+  </exercises>
+
+  <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Put the formulas to your integral formula sheet (now you have more formulas to use!). 
+    </p>
+    <p>
+      Then go to the 
+      <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Intermediate-TrigIntegral.html">next activity</url> 
+      to explore the intermediate trigonometric integrals about dealing with multiple trigonometric functions in an integral. 
+    </p>
+  </exercises>
+
+</section>

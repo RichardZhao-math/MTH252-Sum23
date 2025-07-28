@@ -5,23 +5,44 @@
 
   <introduction>
 
-    <p>
-      The activities will be available on <alert> Monday, July 28</alert> and due on <alert>Sunday, August 3</alert>. 
-    </p>
-    
-    <!--
     <p> 
       The activities for this week will ask you to explore some strategies to evaluate trigonometric integrals. 
+      Two of the advantages of working with trigonometric integrals are
+      <ul>
+        <li>
+          <p>
+            There are a lot of trigonometric identities that allow us to convert the integrand to a form we desire. 
+          </p>
+        </li>
+        <li>
+          <p>
+            The derivatives and integrals of some trigonometric functions are periodic (for example, the derivative and integral of sine and cosine are just going back and forth between them). 
+            This can reduce the type of functions we need to deal with. 
+          </p>
+        </li>
+      </ul>
+      Recall the whole idea of the trigonometric substitution you learned this week is to turn an un-simplified-able expression to a trigonometric expression, and we can manipulate it using trigonometric identities to help us evaluate the integrals, typically using <m>u</m>-sub or integration by parts. 
     </p>
 
     <p>
-      When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas. 
+      To help us with the method of trigonometric substitution, it will be beneficial to know some of the strategies and formulas to deal with trigonometric integrals. 
     </p>
-    -->
+
+    <p>
+      When you are ready to investigate some of the trigonometric integrals, click the buttons below and work through the tasks following the prompts. 
+      You are more than welcome to work with your classmates collaboratively but you will need to write up your own work. 
+      When you completed all the tasks, format your work into a <alert>single pdf file</alert> and submit it in the corresponding assignment dropbox on Canvas.
+    </p>
 
   </introduction>
 
   <!-- include sections -->
-  
+  <xi:include href="sec-Basic-TrigIntegral.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Intermediate-TrigIntegral.ptx" />
+
+  <!-- include sections -->
+  <xi:include href="sec-Advanced-TrigIntegral.ptx" />
 
 </chapter>
