@@ -95,7 +95,7 @@
             So we will need a tricky manipulation to turn <m>\sec(x)</m> and <m>\csc(x)</m> into a slightly complicated fractions to work with, and they are
             <md>
                 <mrow> \sec(x) \amp= \frac{\sec(x)\big(\sec(x) + \tan(x)\big)}{\sec(x) + \tan(x)} </mrow>
-                <mrow> \csc(x) \amp= \frac{\csc(x)\big(\csc(x) + \cot(x)\big)}{\csc(x) + \cot(x)}</mrow>
+                <mrow> \csc(x) \amp= \frac{\csc(x)\big(\csc(x) - \cot(x)\big)}{\csc(x) - \cot(x)}</mrow>
             </md>
             The method you should be thinking about using here is also <m>u</m>-sub (in a similar fashion to Part (a)). 
         </p>
