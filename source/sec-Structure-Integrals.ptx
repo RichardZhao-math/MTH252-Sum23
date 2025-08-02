@@ -81,6 +81,24 @@
       </p>
     </statement>
 
+    <solution>
+      <p>
+        The symbol "<m>\int</m>" is just a fancy cursive S that represents <alert>Summation</alert>. 
+        The <m>0</m> and the <m>5</m> are the initial and the final value of the time in this context. 
+      </p>
+      <p>
+        The <m>v(t)</m> here denotes the velocity of the gorilla at a certain timestamp <m>t</m>. 
+      </p>
+      <p>
+        The <m>dt</m> here represents the elapsed time where the gap is infinitesimal small (so <m>dt</m> is just a fancy way of representing <m>\Delta t</m> as the gap approaches <m>0</m>). 
+      </p>
+
+      <p>
+        The <m>v(t)\, dt</m> is a representative of one piece of the distance (we multiplied the velocity at time <m>t</m> with the elapsed time <m>dt</m>), 
+        and the <m>\int</m> symbol tells us to add all the pieces of distance together to obtain the <alert>total</alert> distance traveled. 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -96,6 +114,20 @@
         Which symbol (or the lack of symbol) represents the multiplication and which symbol represents the addition? 
       </p>
     </statement>
+
+    <solution>
+      <p>
+        Similar to the gorilla problem, we multiply the integrand with the differential together. 
+        That is, we multiply <m>f(x)</m> with <m>dx</m>. The lack of symbol between these two things represent multiplication (this is the juxtaposition in math, that the lack of symbols between two things represents multiplication). 
+      </p>
+      <p>
+        After the multiplication, the <m>f(x)\, dx</m> represent <alert>one piece</alert> of the quantity we are looking for. 
+        The integral symbol, <m>\int</m>, is telling us to add all of the pieces together, while the limits of integrations, <m>a</m> and <m>b</m>, tells us where to start and where to end. 
+      </p>
+      <p>
+        This is essentially what integration means, that we are adding up infinitely many pieces together, where each piece is obtained by multiplying two quantities together. 
+      </p>
+    </solution>
     
   </exercises>
 

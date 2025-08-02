@@ -174,6 +174,86 @@
       </p>
     </hint>
 
+    <solution>
+      <p>
+        (1) There are multiple ways to approximate the distance as long as you can make an argument that the velocity you picked for each time interval is reasonable. 
+        For demonstration purposes, I will approximate the distance using the <alert>left-endpoint approximation</alert>. 
+      </p>
+      <p>
+        <table>
+            <tabular halign="center" frame="all" rules="all">
+                <row header="yes" bottom="medium" >
+                <cell>Time </cell>
+                <cell>Approximate distance </cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>0 -- 0.5</cell>
+                <cell><m>0.5\times 0 = 0</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>0.5 -- 1.0</cell>
+                <cell><m>0.5\times 5 = 2.5</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>1.0 -- 1.5</cell>
+                <cell><m>0.5\times 7 = 3.5</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>1.5 -- 2.0</cell>
+                <cell><m>0.5\times 8 = 4</m></cell>
+                </row>
+
+                <row bottom="minor">
+                <cell>2.0 -- 2.5</cell>
+                <cell><m>0.5\times 0 = 5.5</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>2.5 -- 3.0</cell>
+                <cell><m>0.5\times 11.5 = 5.75</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>3.0 -- 3.5</cell>
+                <cell><m>0.5\times 12 = 6</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>3.5 -- 4.0</cell>
+                <cell><m>0.5\times 13 = 6.5</m></cell>
+                </row>
+
+                <row bottom="minor">
+                <cell>4.0 -- 4.5</cell>
+                <cell><m>0.5\times 15.5 = 7.75</m></cell>
+                </row>
+                            
+                <row bottom="minor">
+                <cell>4.5 -- 5.0</cell>
+                <cell><m>0.5\times 18 = 9</m></cell>
+                </row>
+                            
+            </tabular>
+
+        </table>
+      </p>
+
+      <p>
+        (2) To find the <alert>total</alert> distance traveled, we just add up all the pieces of distance we found in part (1) together. 
+        <me>
+          0 + 2.5 + 3.5 + 4 + 5.5 + 5.75 + 6 + 6.5 + 7.75 + 9 = 50.5
+        </me>
+      </p>
+
+      <p>
+        <alert>P.S.:</alert> There is no "right" answer to an approximation. The only difference between answers are how good the approximation is. 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -206,6 +286,28 @@
         Does it make sense for the velocity to stay constant for 0.5 of a second? 
       </p>
     </hint>
+
+    <solution>
+      <p>
+        <ol>
+          <li>
+            <p>
+              We know our answer is indeed an approximation because of the fact that the velocity of the gorilla falling is accelerating, thanks to gravity. 
+              That is, it is impossible for the velocity to maintain a constant within each 0.5-second interval. 
+              Yet we computed the distance by <em>pretending</em> the velocity within each 0.5-second interval remains a constant (so that we can actually multiply this value by the elapsed time). 
+              Hence, the answer we got is an approximation, not the exact value. 
+            </p>
+          </li>
+          <li>
+            <p>
+              While it is (highly) unlikely for the velocity to remain constant within a fixed interval of time, it is more and more likely for the velocity to stay constant when the elapsed time is smaller and smaller. 
+              That is, to make our approximation better, we want to record more and more data on the velocity, which forces the elapsed time to be smaller and smaller 
+              (for example, as opposed to recording the velocity every 0.5 seconds, recording the velocity every 0.1 seconds will make our approximation better). 
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
 
   </exercises>
 

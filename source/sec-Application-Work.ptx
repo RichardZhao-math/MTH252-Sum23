@@ -64,6 +64,34 @@
       </p>
     </hint>
 
+    <solution>
+      <p>
+        In this calculus version of the formula, 
+        <ul marker="">
+          <li>
+            <p>
+              the integrand is <m>F(x)</m>, which represents the force applied on an object at a certain point <m>x</m>; 
+            </p>
+          </li>
+          <li>
+            <p>
+              the differential <m>dx</m>, represents an infinitesimally small gap of the displacement. 
+            </p>
+          </li>
+        </ul>
+        When multiplying the <m>F(x)</m> and <m>dx</m>, we obtain one piece of the work. 
+        That is, <m>F(x)\, dx</m> is a representative of one piece of the work. 
+      </p>
+
+      <p>
+        The <m>\int</m> symbol tells us to add up all pieces of the work together to obtain the <alert>total</alert> work from <m>x = a</m> to <m>x = b</m>, where the initial and final values are indicated as the limits of integration. 
+      </p>
+
+      <p>
+        Long story short, the calculus formula makes sense because it asked us to <em>add up</em> the <em>product</em> of force and displacement to obtain the <alert>total</alert> work from <m>x = a</m> to <m>x = b</m>. 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
@@ -85,6 +113,27 @@
         Well a question that helps you decide is... Is the force in this scenario a constant during the entire displacement? 
       </p>
     </hint>
+
+    <solution>
+      <p>
+        Notice that the force given is not a constant, which means the force varies. 
+        Hence, we will use the calculus version of the formula (calculus is a study that deals with changes!). 
+        That is, 
+        <me>
+          W = \int_1^3 \frac{2}{x^2}\, dx = \left(-\frac{2}{x}\right)\bigg|_1^3 = \frac{4}{3}
+        </me>
+        Hence, the total work required is <m>\dfrac{4}{3}</m> joules. 
+      </p>
+
+      <p>
+        <alert>P.S.:</alert> The unit of work is <m>N\cdot m</m> as we literally found the work by multiplying the force and the displacement together (of course it makes sense to multiply the units too). 
+        Joules (<m>J</m>) is just a short-hand notation for this composite unit of <m>N\cdot m</m>. 
+      </p>
+      <p>
+        Fun fact: the unit of force, Newton (<m>N</m>), is also a composite unit, defined as <m>kg\cdot m/s^2</m>. But this isn't a physics class so I will leave it to you to dig deeper if you are interested in knowing more physics aspect of it. 
+      </p>
+    </solution>
+
   </exercises>
 
   <exercises>
