@@ -84,6 +84,38 @@
         </p>
     
     </hint>
+
+    <solution>
+        <p>
+            Let's start with the second integral since we have used the same method in the previous investigation task. 
+            Using the Pythagorean identity, we obtain
+            <md>
+                <mrow>\int \sin^3(x)\, dx \amp= \int \sin^2(x)\cdot \sin(x)\, dx </mrow>
+                <mrow> \amp= \int\left(1 - \cos^2(x)\right)\cdot \sin(x)\, dx</mrow>
+            </md>
+            Let <m>u = \cos(x)</m>. Then <m>du = -\sin(x)\, dx</m>. 
+            This implies that
+            <md>
+                <mrow> \int\left(1 - \cos^2(x)\right)\cdot \sin(x)\, dx \amp= -\int \left(1 - u^2\right)\, du </mrow>
+                <mrow> \amp= -u + \frac{u^3}{3} + C </mrow>
+                <mrow> \amp= -\cos(x) + \frac{\cos^3(x)}{3} + C </mrow>
+            </md>
+        </p>
+        <p>
+            Now let's tackle the more difficult one. Using the power-reducing formula, we obtain
+            <md>
+                <mrow>\int \sin^2(x)\, dx \amp= \int \frac{1}{2}\left(1 - \cos(2x)\right)\, dx </mrow>
+                <mrow> \amp= \frac{1}{2}\int \left(1 - \cos(2x)\right)\, dx </mrow>
+                <mrow> \amp= \frac{1}{2} \left(\int \, dx - \int \cos(2x)\, dx\right)</mrow>
+            </md>
+            We can integrate <m>\cos(2x)</m> by a simple <m>u</m>-sub of letting <m>u = 2x</m>. 
+            Then we have
+            <md>
+                <mrow> \frac{1}{2} \left(\int \, dx - \int \cos(2x)\, dx\right) \amp= \frac{1}{2} \left(x - \frac{1}{2}\sin(2x)\right) + C</mrow>
+                <mrow> \amp= \frac{x}{2} - \frac{1}{4}\sin(2x) + C </mrow>
+            </md>
+        </p>
+    </solution>
     
   </exercises>
 
@@ -114,6 +146,21 @@
         </me>
         using this reduction formula above. 
     </p>
+
+    <solution>
+        <p>
+            We can use the reduction formula with <m>m = 4</m> to integrate <m>\sin^4(x)</m> as follows: 
+            <md>
+                <mrow> \int \sin^4(x)\, dx \amp= -\frac{\sin^3(x)\cos(x)}{4} + \frac{3}{4}\int \sin^2(x)\, dx </mrow>
+            </md>
+                See that the resulting integral is something we have evaluated in part (a), so we can use the result directly. 
+                This implies that
+            <md>
+                <mrow> -\frac{\sin^3(x)\cos(x)}{4} + \frac{3}{4}\int \sin^2(x)\, dx \amp= -\frac{\sin^3(x)\cos(x)}{4} + \frac{3}{4}\left(\frac{x}{2} - \frac{1}{4}\sin(2x)\right) + C </mrow>
+                <mrow> \amp= -\frac{\sin^3(x)\cos(x)}{4} + \frac{3x}{8} - \frac{3}{16}\sin(2x) + C </mrow>
+            </md>
+        </p>
+    </solution>
     
   </exercises>
 

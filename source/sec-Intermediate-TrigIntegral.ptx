@@ -96,10 +96,28 @@
                 You actually can evaluate this integral using <m>u</m>-sub. 
                 Try using <m>u = \cos(x)</m> and see how easy the integral will become!
             </p>
-        
         </hint>
         
     </hint>
+
+    <solution>
+        <p>
+            By the hint, we want to convert as many <m>\sin(x)</m>'s to <m>\cos(x)</m>'s. 
+            Using the Pythagorean identity <m>\sin^2(x) = 1 - \cos^2(x)</m>, we obtain
+            <md>
+                <mrow>\int\sin^3(x)\cos^2(x)\, dx \amp= \int \sin(x)\cdot \sin^2(x)\cos^2(x)\, dx </mrow>
+                <mrow> \amp= \int \sin(x)\left(1 - \cos^2(x)\right)\cos^2(x)\, dx </mrow>
+                <mrow> \amp= \int \sin(x)\left(\cos^2(x) - \cos^4(x)\right)\, dx </mrow>
+            </md>
+            Now let's try using hint Richard gave by letting <m>u = \cos(x)</m>. Then <m>du = -\sin(x)\, dx</m>. 
+            This implies that
+            <md>
+                <mrow> \int \sin(x)\left(\cos^2(x) - \cos^4(x)\right)\, dx \amp = -\int \left(u^2 - u^4\right)\, du</mrow>
+                <mrow> \amp= -\frac{u^3}{3} - \frac{u^5}{5} + C </mrow>
+                <mrow> \amp= -\frac{\cos^3(x)}{3} - \frac{\cos^5(x)}{5} + C </mrow>
+            </md>
+        </p>
+    </solution>
 
   </exercises>
 
@@ -124,6 +142,88 @@
         <p>
             Richard will not give out formal hints here since the hints will be highly similar to the ones above. 
             If you get stuck or want to confirm your work, email your questions/work to Richard and he can help you out. 
+        </p>
+
+    </statement>
+
+    <solution>
+        <p>
+            Let's mimic the process here. Observe that <m>\cos(x)</m> is the one with the odd power. 
+            Then we will convert as many of the <m>\cos(x)</m>'s to <m>\sin(x)</m>'s using the Pythagorean identity. 
+            <md>
+                <mrow>\int \sin^2(x)\cos^5(x)\, dx \amp= \int \sin^2(x) \left(\cos^2(x)\right)^2 \cos(x)\, dx</mrow>
+                <mrow> \amp= \int \sin^2(x)\left(1 - \sin^2(x)\right)^2\cos(x)\, dx </mrow>
+                <mrow> \amp= \int \sin^2(x)\left(1 - 2\sin^2(x) + \sin^4(x)\right)\cos(x)\, dx </mrow>
+                <mrow> \amp= \int\left( \sin^2(x) - 2\sin^4(x) + \sin^6(x)\right)\cos(x)\, dx </mrow>
+            </md>
+            Now let <m>u = \sin(x)</m>. Then <m>du = \cos(x)\, dx</m>. This implies that
+            <md>
+                <mrow> \int\left( \sin^2(x) - 2\sin^4(x) + \sin^6(x)\right)\cos(x)\, dx \amp= \int \left(u^2 - 2u^4 + u^6\right)\, du </mrow>
+                <mrow> \amp= \frac{u^3}{3} - \frac{2u^5}{5} + \frac{u^7}{7} + C </mrow>
+                <mrow> \amp= \frac{\sin^3(x)}{3} - \frac{2\sin^5(x)}{5} + \frac{\sin^7(x)}{7} + C </mrow>
+            </md>
+        </p>
+    </solution>
+    
+  </exercises>
+
+  <exercises>
+    <title>Why do we care so much about the odd power...</title>
+
+    <statement>
+        <p>
+            From the previous two examples, we can see that we can always peel out a single <m>\sin(x)</m> or <m>\cos(x)</m> from the odd power and make it part of the <m>du</m>. 
+            For the rest of the even number of factors, we can turn it to the other one using the Pythagorean identity. 
+            To summarize it into a pretty table, these are the strategies we should consider: 
+        </p>
+        
+        <table>
+        <tabular halign="center" frame="all" rules="all">
+            <col width="40%"/>
+            <col width="60%"/>
+
+            <row header="yes" bottom="medium">
+            <cell><m>\int \sin^m(x) \cos^n(x) \, dx</m></cell>
+            <cell>Strategy</cell>
+            </row>
+
+            <row bottom="minor">
+            <cell halign="left"><m>m</m> is odd</cell>
+            <cell halign="left">
+                <p>Factor out a <m>\sin(x)</m> term.</p>
+                <p>Convert the remaining even power of <m>\sin(x)</m> to <m>\cos(x)</m> using the Pythagorean identity</p>
+                <p>Then use <m>u</m>-sub that <m>u = \cos(x)</m> </p>
+            </cell>
+            </row>
+
+            <row bottom="minor">
+            <cell halign="left"><m>n</m> is odd</cell>
+            <cell halign="left">
+                <p>Factor out a <m>\cos(x)</m> term.</p>
+                <p>Convert the remaining even power of <m>\cos(x)</m> to <m>\sin(x)</m> using the Pythagorean identity</p>
+                <p>Then use <m>u</m>-sub that <m>u = \sin(x)</m> </p>
+            </cell>
+            </row>
+
+        </tabular>
+        </table>
+
+        <p>
+            <alert>But Richard... what happens if both <m>\boldsymbol{m}</m> and <m>\boldsymbol{n}</m> are odd... </alert>
+            Well then you can just pick one of the two strategies above and they should both work. 
+        </p>
+
+        <p>
+            <alert>But Richard... what happens if neither <m>\boldsymbol{m}</m> nor <m>\boldsymbol{n}</m> are odd... </alert>
+            Well then we need to use power-reducing formulas to chip away the power. 
+            You will explore a similar question in the next investigation. Long story short, the two major power-reducing formulas we are using are
+            <me>
+                \sin^2(x) = \frac{1}{2}\left(1 - \cos(2x)\right)
+            </me>
+            and
+            <me>
+                \cos^2(x) = \frac{1}{2}\left(1 + \cos(2x)\right)
+            </me>
         </p>
 
     </statement>

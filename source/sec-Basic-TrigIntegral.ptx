@@ -75,6 +75,38 @@
             </md>
         </p>
     </hint>
+
+    <solution>
+        <p>
+            Let's tackle the integral of <m>\tan(x)</m> first! By the hint, we know that
+            <me>
+                \int \tan(x)\, dx = \int\frac{\sin(x)}{\cos(x)}\, dx
+            </me>
+            Let <m>u = \cos(x)</m>. Then <m>du = -\sin(x)\, dx</m>. This implies that
+            <md>
+                <mrow>\int \tan(x)\, dx \amp= \int\frac{\sin(x)}{\cos(x)}\, dx </mrow>
+                <mrow> \amp= \int \frac{-du}{u} </mrow>
+                <mrow> \amp= -\ln|u| + C </mrow>
+                <mrow> \amp= -\ln|\cos(x)| + C </mrow>
+                <mrow> \amp= \ln\left|\left(\cos(x)\right)^{-1}\right| + C </mrow>
+                <mrow> \amp= \ln\left|\sec(x)\right| + C </mrow>
+            </md>    
+        </p>
+
+        <p>
+            Now let's integrate <m>\cot(x)</m>! Again, by the hint, we know that
+            <me>
+                \int \cot(x)\, dx = \int\frac{\cos(x)}{\sin(x)}\, dx
+            </me>
+            Let <m>u = \sin(x)</m>. Then <m>du = \cos(x)\, dx</m>. This implies that
+            <md>
+                <mrow>\int \cot(x)\, dx \amp= \int\frac{\cos(x)}{\sin(x)}\, dx </mrow>
+                <mrow> \amp= \int \frac{du}{u} </mrow>
+                <mrow> \amp= \ln|u| + C </mrow>
+                <mrow> \amp= \ln\left|\sin(x)\right| + C </mrow>
+            </md>
+        </p>
+    </solution>
     
   </exercises>
 
@@ -111,6 +143,43 @@
             </md>
         </p>
     </hint>
+
+    <solution>
+        <p>
+            Let's integrate <m>\sec(x)</m> first! 
+            Using the hint, we know that
+            <me>
+                \int \sec(x)\, dx = \int \frac{\sec(x)\big(\sec(x) + \tan(x)\big)}{\sec(x) + \tan(x)}\, dx
+            </me>
+        </p>
+        <p>
+            Let <m>u = \sec(x) + \tan(x)</m>. 
+            Then <m>du = \left(\sec(x)\tan(x) + \sec^2(x)\right)\, dx</m>. 
+            This implies that
+            <md>
+                <mrow> \int \sec(x)\, dx \amp= \int \frac{\sec(x)\big(\sec(x) + \tan(x)\big)}{\sec(x) + \tan(x)}\, dx </mrow>
+                <mrow> \amp= \int \frac{\sec^2(x) + \sec(x)\tan(x)}{\sec(x) + \tan(x)}\, dx </mrow>
+                <mrow> \amp= \int\frac{du}{u} </mrow>
+                <mrow> \amp= \ln|u| + C </mrow>
+                <mrow> \amp= \ln\left|\sec(x) + \tan(x)\right| + C </mrow>
+            </md>
+        </p>
+        <p>
+            Now let's integrate <m>\csc(x)</m>! We know, from the hint, that
+            <me>
+                \int\csc(x)\, dx = \int\frac{\csc(x)\big(\csc(x) - \cot(x)\big)}{\csc(x) - \cot(x)}\, dx
+            </me>
+            Let <m>u = \csc(x) - \cot(x)</m>. Then <m>du = \big(-\csc(x)\cot(x) + \csc^2(x)\big)\, dx</m>
+            This implies that
+            <md>
+                <mrow> \int \csc(x)\, dx \amp= \int\frac{\csc(x)\big(\csc(x) - \cot(x)\big)}{\csc(x) - \cot(x)}\, dx </mrow>
+                <mrow> \amp= \int \frac{\csc^2(x) - \csc(x)\cot(x)}{\csc(x) - \cot(x)}\, dx </mrow>
+                <mrow> \amp= \int\frac{du}{u} </mrow>
+                <mrow> \amp= \ln|u| + C </mrow>
+                <mrow> \amp= \ln\left|\csc(x) - \cot(x)\right| + C </mrow>
+            </md>
+        </p>
+    </solution>
 
   </exercises>
 
