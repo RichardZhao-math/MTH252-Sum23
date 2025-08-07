@@ -109,12 +109,12 @@
                 <mrow> \amp= \int \sin(x)\left(1 - \cos^2(x)\right)\cos^2(x)\, dx </mrow>
                 <mrow> \amp= \int \sin(x)\left(\cos^2(x) - \cos^4(x)\right)\, dx </mrow>
             </md>
-            Now let's try using hint Richard gave by letting <m>u = \cos(x)</m>. Then <m>du = -\sin(x)\, dx</m>. 
+            Now let's use the hint Richard gave by letting <m>u = \cos(x)</m>. Then <m>du = -\sin(x)\, dx</m>. 
             This implies that
             <md>
                 <mrow> \int \sin(x)\left(\cos^2(x) - \cos^4(x)\right)\, dx \amp = -\int \left(u^2 - u^4\right)\, du</mrow>
-                <mrow> \amp= -\frac{u^3}{3} - \frac{u^5}{5} + C </mrow>
-                <mrow> \amp= -\frac{\cos^3(x)}{3} - \frac{\cos^5(x)}{5} + C </mrow>
+                <mrow> \amp= -\frac{u^3}{3} + \frac{u^5}{5} + C </mrow>
+                <mrow> \amp= -\frac{\cos^3(x)}{3} + \frac{\cos^5(x)}{5} + C </mrow>
             </md>
         </p>
     </solution>
