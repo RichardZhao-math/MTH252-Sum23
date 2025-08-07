@@ -190,7 +190,7 @@
             <row bottom="minor">
             <cell halign="left"><m>m</m> is odd</cell>
             <cell halign="left">
-                <p>Factor out a <m>\sin(x)</m> term.</p>
+                <p>Factor out a <m>\sin(x)</m></p>
                 <p>Convert the remaining even power of <m>\sin(x)</m> to <m>\cos(x)</m> using the Pythagorean identity</p>
                 <p>Then use <m>u</m>-sub that <m>u = \cos(x)</m> </p>
             </cell>
@@ -199,7 +199,7 @@
             <row bottom="minor">
             <cell halign="left"><m>n</m> is odd</cell>
             <cell halign="left">
-                <p>Factor out a <m>\cos(x)</m> term.</p>
+                <p>Factor out a <m>\cos(x)</m></p>
                 <p>Convert the remaining even power of <m>\cos(x)</m> to <m>\sin(x)</m> using the Pythagorean identity</p>
                 <p>Then use <m>u</m>-sub that <m>u = \sin(x)</m> </p>
             </cell>
