@@ -27,7 +27,7 @@
       <title>Part (a): Evaluation by hand</title>
         <statement>
           <p>
-            Evaluate the integral by hand. Write down each of your steps. 
+            Evaluate the integral by hand. Show your work by writing down each of the step AND explain a bit the rationale behind the steps. 
           </p>
           <hint>
             <p>
@@ -51,7 +51,7 @@
             After the CAS evaluated the integral, scroll down on the Result and click "Show steps" to see how the CAS evaluated the integral. 
           </p>
           <p>
-            Your task here is to briefly summarize the approach the CAS used to evaluate this integral (don't copy down the steps exactly. Instead, summarize what they did). 
+            Your task here is to briefly summarize the approach the CAS used to evaluate this integral (don't copy down the work exactly. Instead, <alert>summarize</alert> the process by saying what they did in each step). 
           </p>
         </statement>
     </exercises>
@@ -64,17 +64,32 @@
             <ul>
                 <li>
                     <p>
-                        In your opinion, who do you think provided an easier and more elegant solution? Why? 
+                        In your opinion, who do you think provided an easier and more elegant solution? You or the CAS? Why? 
                     </p>
                 </li>
                 <li>
                     <p>
-                        
+                        How does this task inform you about evaluating integrals using CAS? Can we trust it blindly? 
                     </p>
                 </li>
             </ul>
           </p>
         </statement>
     </exercises>
+
+    <exercises>
+    <title>When you complete the tasks... </title>
+    <p>
+      Brag about how smart we are and we defeat the computer when evaluating this integral! 
+    </p>
+    <p>
+      Then format your work for the investigations for this week, as a <alert>single pdf file</alert> and submit it in 
+      <url href="https://canvas.pdx.edu/courses/103253/assignments/1071239/">this assignment dropbox</url> 
+      on Canvas. 
+    </p>
+    <p>
+      Remember that your work will be graded on your effort in completing the tasks and your understanding of concepts! 
+    </p>
+  </exercises>
 
 </section>

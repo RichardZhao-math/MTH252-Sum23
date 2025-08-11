@@ -6,25 +6,58 @@
   <introduction>
     
     <p>
-      The activities will be available on <alert> Monday, August 11</alert> and due on <alert>Sunday, August 17</alert>. 
+      We learned multiple methods to evaluate integrals in this class. They are
+      <ul>
+        <li>
+          <p>
+            Evaluate integrals using one of the known integral formulas; 
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>u</m>-substitution; 
+          </p>
+        </li>
+        <li>
+          <p>
+            Integration by parts; 
+          </p>
+        </li>
+        <li>
+          <p>
+            Trigonometric Substitution; 
+          </p>
+        </li>
+        <li>
+          <p>
+            Partial Fraction Decomposition. 
+          </p>
+        </li>
+      </ul>
+      But that's a lot of methods throwing at us... 
+      In practice, sometimes it is difficult to pick which method to use 
+      (unless Richard is being nice and provide the method... But we can't always count on him). 
+    </p>
+
+    <p>
+      Well it turns out that sometimes students getting stuck in a problem not because they pick the wrong method, but rather an <em>inefficient</em> method that makes the work ten times harder. 
+      You want to know how to pick not only a correct method, but also an efficient method to evaluate integrals. 
     </p>
     
-    <!--
     <p> 
-      The activities for this week will ask you to explore various techniques to evaluate integrals. 
+      The activities for this week will ask you to explore various techniques to evaluate integrals, and compare and contrast different methods to evaluate the same integral. 
     </p>
 
     <p>
       When you completed all the tasks, format your work into a single pdf file and submit it in the corresponding assignment dropbox on Canvas. 
     </p>
-    -->
 
   </introduction>
 
-  <!-- include sections 
-  <xi:include href="sec-Strategies-Integration.ptx" />-->
+  <!-- include sections -->
+  <xi:include href="sec-Strategies-Integration.ptx" />
 
-  <!-- include sections
-  <xi:include href="sec-Calculator-Integration.ptx" />-->
+  <!-- include sections -->
+  <xi:include href="sec-Calculator-Integration.ptx" />
 
 </chapter>
