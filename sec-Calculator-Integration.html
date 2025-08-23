@@ -245,7 +245,8 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-4" class="internal"><span class="codenumber">5.1</span> <span class="title">Part (b): Alternative approach</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-5" class="internal"><span class="codenumber">5.1</span> <span class="title">Part (c): Compare and reflect</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-6" class="internal"><span class="codenumber">5.1</span> <span class="title">How do I know what method I should try...</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-7" class="internal"><span class="codenumber">5.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-7" class="internal"><span class="codenumber">5.1</span> <span class="title">A bit historical background about this task...</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-Strategies-Integration.html#sec-Strategies-Integration-8" class="internal"><span class="codenumber">5.1</span> <span class="title">When you complete the tasks...</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section contains-active">
@@ -319,7 +320,20 @@ eBookConfig.enable_chatcodes =  false;
 </div> <div class="para" id="sec-Calculator-Integration-4-2-2">After the CAS evaluated the integral, scroll down on the Result and click "Show steps" to see how the CAS evaluated the integral.<div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculator-Integration-4-2-2" title="Copy permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="sec-Calculator-Integration-4-2-3">Your task here is to briefly summarize the approach the CAS used to evaluate this integral (don’t copy down the work exactly. Instead, <em class="alert">summarize</em> the process by saying what they did in each step).<div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculator-Integration-4-2-3" title="Copy permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercises 5.2: Part (b): Evaluation by CAS"><a href="#sec-Calculator-Integration-4" title="Copy permalink for Exercises 5.2: Part (b): Evaluation by CAS">🔗</a></div></section><section class="exercises" id="sec-Calculator-Integration-5"><h3 class="heading hide-type">
+<details id="sec-Calculator-Integration-4-3" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="sec-Calculator-Integration-4-3-1">
+<div class="para">Well what CAS did was to expand <span class="process-math">\((\sin x + \cos x)^2\)</span> and broke it down using linearity as follows:</div>
+<div class="displaymath process-math" id="sec-Calculator-Integration-4-3-1-2">
+\begin{align*}
+\int \left(\sin x + \cos x\right)^2 \amp = \int \left(\sin^2 x + 2\sin(x)\cos(x) + \cos^2(x)\right)\, dx \\
+\amp = \int\sin^2(x)\, dx + \int 2\sin(x)\cos(x)\, dx + \int \cos^2(x)\, dx 
+\end{align*}
+</div>
+<div class="para">Well the middle integral is easy to evaluate but CAS uses the reduction formula for <span class="process-math">\(\int \sin^2(x)\, dx\)</span> and <span class="process-math">\(\int \cos^2(x)\, dx\text{,}\)</span> making the steps a lot more complicated.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-Calculator-Integration-4-3-1" title="Copy permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 5.2.1"><a href="#sec-Calculator-Integration-4-3" title="Copy permalink for Solution 5.2.1">🔗</a></div>
+</div></details><div class="autopermalink" data-description="Exercises 5.2: Part (b): Evaluation by CAS"><a href="#sec-Calculator-Integration-4" title="Copy permalink for Exercises 5.2: Part (b): Evaluation by CAS">🔗</a></div></section><section class="exercises" id="sec-Calculator-Integration-5"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title">Part (c): Compare and Reflect</span>
 </h3>
 <div class="para logical" id="sec-Calculator-Integration-5-2-1">
