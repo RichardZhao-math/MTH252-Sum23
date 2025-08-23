@@ -249,6 +249,38 @@
     </exercises>
 
     <exercises>
+      <title>A bit historical background about this task... </title>
+      
+      <statement>
+        <p>
+          I actually found this task from a research paper in math education in my first year PhD. 
+          The original problem was <m>\int \frac{x}{x^2 - 9}\, dx</m>, which makes it a bit more complicated if a student attempted to try trig sub. 
+        </p>
+
+        <p>
+          The result from that study showed that only about 50% of the students attempted the <m>u</m>-sub in this problem. 
+          About 35% of them tried partial fraction decomposition and 15% of them used trig sub. 
+        </p>
+
+        <p>
+          Well students trying <m>u</m>-sub performed better in general compared to students who didn't try <m>u</m>-sub in this problem since they have greater confidence and ample time for the rest of the exam. 
+          People trying trig sub spent too much time on this problem and often got stuck and doubt whether their answer was correct. 
+        </p>
+
+        <p>
+          But the surprising finding here is that students using partial fraction decomposition or trig sub didn't switch method when they got stuck. 
+          They just kept on getting stuck using a complicated method. 
+        </p>
+
+        <p>
+          I was shocked by the finding when I read this paper two years ago (there are more from this paper but this is the most shocking finding to me). 
+          I hope you all learn something from this task and the finding in terms of evaluating the integrals! 
+        </p>
+      </statement>
+
+    </exercises>
+
+    <exercises>
       <title>When you complete the tasks... </title>
       <p>
         Come up with a strategic plan to evaluate integrals (you don't have to turn this in. Just make sure you have a plan that you can rely on when evaluating integrals in the future).  

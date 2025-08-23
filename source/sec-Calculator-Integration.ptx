@@ -74,6 +74,17 @@
             Your task here is to briefly summarize the approach the CAS used to evaluate this integral (don't copy down the work exactly. Instead, <alert>summarize</alert> the process by saying what they did in each step). 
           </p>
         </statement>
+
+        <solution>
+          <p>
+            Well what CAS did was to expand <m>(\sin x + \cos x)^2</m> and broke it down using linearity as follows: 
+            <md>
+              <mrow> \int \left(\sin x + \cos x\right)^2 \amp = \int \left(\sin^2 x + 2\sin(x)\cos(x) + \cos^2(x)\right)\, dx </mrow>
+              <mrow> \amp = \int\sin^2(x)\, dx + \int 2\sin(x)\cos(x)\, dx + \int \cos^2(x)\, dx </mrow>
+            </md>
+            Well the middle integral is easy to evaluate but CAS uses the reduction formula for <m>\int \sin^2(x)\, dx</m> and <m>\int \cos^2(x)\, dx</m>, making the steps a lot more complicated. 
+          </p>
+        </solution>
     </exercises>
 
     <exercises>
