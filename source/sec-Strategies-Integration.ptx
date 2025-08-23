@@ -147,20 +147,117 @@
           <p>  
             Stay tuned as Richard will update the "official" strategic plan here after the due date. 
           </p>
+
         </statement>
       
     </exercises>
 
     <exercises>
-    <title>When you complete the tasks... </title>
-    <p>
-      Come up with a strategic plan to evaluate integrals (you don't have to turn this in. Just make sure you have a plan that you can rely on when evaluating integrals in the future).  
-    </p>
-    <p>
-      Then go to the 
-      <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Calculator-Integration.html">next activity</url> 
-      to explore how we can evaluate integrals using technology (and how reliable that can be). 
-    </p>
-  </exercises>
+      <title>How do I know what method I should try... </title>
+      
+        <p>
+          Julie walked through the strategies in the lecture video (and I think a lot of you are following it as well). 
+          In the spirit of keeping an record of the methods we have learned, I put a brief strategic plan on the methods. 
+        </p>
+
+        <ul>
+          <li>
+            <p>
+              Always try <alert>simplification</alert> first! 
+              Do any algebraic simplification possible! 
+              If we can make the integrand a lot simpler to deal with, why not!?
+            </p>
+          </li>
+          <li>
+            <p>
+              <alert><m>\boldsymbol{u}</m>-sub</alert> is the method you should try next. 
+              Recall <m>u</m>-sub came from the chain rule you learned in calculus 1, which means you may want to be able to find the derivative of the choice of <m>u</m> in the integrand. 
+              Long story short, the <m>u</m>-sub formula is
+              <me>
+                \int f'(u(x))\cdot u'(x)\, dx = f(u(x)) + C
+              </me>
+              Just make sure you don't end up getting a more complicated integral after <m>u</m>-sub. 
+            </p>
+          </li>
+          <li>
+            <p>
+              If you see two functions being multiplied in the integrand, you may want to consider using <alert>integration by parts</alert> since this method came from the product rule in derivative. 
+              You will want to pick a <m>u</m> and the rest of the integral will be the <m>dv</m>. 
+              Long story short, the integration by parts formula is
+              <me>
+                \int u\, dv = uv - \int v\, du
+              </me>
+              You may be wondering how we can pick a <m>u</m> to make the problem easier. 
+              There is an acronym "LIPET" to help us pick a good <m>u</m> (you can look up the LIPET test if you want to know further). 
+              This acronym LIPET tells us that we should pick the <m>u</m> in the following order: 
+              <ul>
+                <li>
+                  <p>
+                    <alert>L</alert> stands for Logarithmic functions; 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <alert>LI</alert> stands for Inverse Trigonometric functions; 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <alert>P</alert> stands for Polynomial functions; 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <alert>E</alert> stands for Exponential functions; 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <alert>T</alert> stands for Trigonometric functions; 
+                  </p>
+                </li>
+              </ul>
+              Well... Exponential and Trigonometric functions are equally complicated when picking them for the <m>u</m>...  
+            </p>
+          </li>
+          <li>
+            <p>
+              There are also two special methods we learned that only works if the situation fits. 
+              They are: 
+              <ul>
+                <li>
+                  <p>
+                    <alert>Trigonometric Substitution</alert>: If you see <m>a^2 - x^2</m> in the integrand, you may consider using the substitution that <m>x = a\sin(\theta)</m>. 
+                    Likewise, if you see <m>a^2 + x^2</m> in the integrand, you may consider using the substitution that <m>x = a\tan(\theta)</m>. 
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <alert>Partial Fraction Decomposition</alert>: If you see a complicated <em>proper</em> fraction where the denominator happens to be reducible (fancy way of saying factor-able), then partial fraction decomposition will help you split up the fraction to smaller pieces. 
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+
+        <p>
+          As you saw in this task that sometimes we can evaluate an integral using multiple methods. Trying easier method first is always a good idea. 
+          If you get stuck, try something else! 
+        </p>
+
+    </exercises>
+
+    <exercises>
+      <title>When you complete the tasks... </title>
+      <p>
+        Come up with a strategic plan to evaluate integrals (you don't have to turn this in. Just make sure you have a plan that you can rely on when evaluating integrals in the future).  
+      </p>
+      <p>
+        Then go to the 
+        <url href="https://richardzhao-math.github.io/MTH252-Sum23/sec-Calculator-Integration.html">next activity</url> 
+        to explore how we can evaluate integrals using technology (and how reliable that can be). 
+      </p>
+    </exercises>
 
 </section>

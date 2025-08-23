@@ -26,12 +26,6 @@
     <!-- Include chapters -->
     <xi:include href="./ch-wk8-activities.ptx" />
 
-    <!-- Include chapters -->
-    <xi:include href="./ch-wk9-activities.ptx" />
-
-    <!-- Include chapters -->
-    <!--<xi:include href="./ch-exams-review.ptx" />-->
-
     <!-- Include backmatter -->
     <xi:include href="./backmatter.ptx" />
 
