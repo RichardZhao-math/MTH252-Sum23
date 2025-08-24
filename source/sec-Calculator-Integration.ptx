@@ -52,7 +52,7 @@
             Now let us start to evaluate this integral by hand! 
             <md>
               <mrow> \int \left(\sin x + \cos x\right)^2 \, dx \amp = \int\left(\sin^2(x) + 2\sin(x)\cos(x) + \cos^2(x)\right)\, dx </mrow>
-              <mrow> \amp = \int\left(1 + 2\sin(x)\cos(x)\right) </mrow> 
+              <mrow> \amp = \int\left(1 + 2\sin(x)\cos(x)\right)\, dx </mrow> 
               <mrow> \amp = \int \left(1 + \sin(2x)\right)\, dx</mrow>
               <mrow> \amp = x + \frac{1}{2}\cos(2x) + C</mrow>
             </md>
